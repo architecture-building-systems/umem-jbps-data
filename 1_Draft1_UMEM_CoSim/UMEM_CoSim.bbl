@@ -1,0 +1,67 @@
+\begin{thebibliography}{9}
+\newcommand{\enquote}[1]{``#1''}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\normalfont{#1}}
+\providecommand{\urlprefix}{ }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem[Dorer et~al.(2013)Dorer, Allegrini, Orehounig, Moonen, Upadhyay,
+  K{\"a}mpf, and Carmeliet]{Dorer:2013vt}
+Dorer, Viktor, Jonas Allegrini, Kristina Orehounig, Peter Moonen, Govinda
+  Upadhyay, J{\'e}r{\^o}me K{\"a}mpf, and Jan Carmeliet. 2013. ``{Modelling the
+  urban microclimate and its impact on the energy demand of buildings and
+  building clusters}.'' In \emph{Proceedings of BS2013: 13th Conference of
+  International Building Performance Simulation Association,} 3483--3489.
+  Chambery, France: International Building Performance Simulation Association.
+  Aug..
+
+\bibitem[{JModelica}(2014)]{Anonymous:ZZTfF80-}
+{JModelica}. 2014. ``{http://www.jmodelica.org/FMILibrary}.''
+  \urlprefix\url{http://www.jmodelica.org/FMILibrary}.
+
+\bibitem[Keirstead, Jennings, and Sivakumar(2012)]{Keirstead:2012ct}
+Keirstead, James, Mark Jennings, and Aruna Sivakumar. 2012. ``{A review of
+  urban energy system models: Approaches, challenges and opportunities}.''
+  \emph{Renewable and Sustainable Energy Reviews} 16 (6): 3847--3866.
+
+\bibitem[Miller et~al.(2014)Miller, Thomas, Irigoyen, Hersberger, Nagy, Rossi,
+  and Schlueter]{Miller:2014tu}
+Miller, Clayton, Daren Thomas, Silvia~Domingo Irigoyen, Christian Hersberger,
+  Zoltan Nagy, Dino Rossi, and Arno Schlueter. 2014. ``{BIM-extracted
+  EnergyPlus model calibration for retrofit analysis of a historically listed
+  building in Switzerland}.'' In \emph{In Proceedings of SimBuild 2014: 2014
+  ASHRAE/IBPSA-USA Building Simulation Conference,} Atlanta, GA, USA. Sep..
+
+\bibitem[Nouidui, Wetter, and Zuo(2014)]{Nouidui:2014hq}
+Nouidui, Thierry, Michael Wetter, and Wangda Zuo. 2014. ``{Functional mock-up
+  unit for co-simulation import in EnergyPlus}.'' \emph{Journal of Building
+  Performance Simulation} 7 (3): 192--202.
+
+\bibitem[Nouidui and Wetter(2014)]{Nouidui:2014bo}
+Nouidui, Thierry~Stephane, and Michael Wetter. 2014. ``{Tool coupling for the
+  design and operation of building energy and control systems based on the
+  Functional Mock-up Interface standard}.'' In \emph{the 10th International
+  Modelica Conference, March 10-12, 2014, Lund, Sweden,} 311--320.
+  Link{\"o}ping University Electronic Press. Mar..
+
+\bibitem[Robinson et~al.(2009)Robinson, Haldi, K{\"a}mpf, Leroux, Perez,
+  Rasheed, and Wilke]{Robinson:2009tm}
+Robinson, D, Fr{\'e}d{\'e}ric Haldi, J~K{\"a}mpf, Philippe Leroux, Diane Perez,
+  Adil Rasheed, and Urs Wilke. 2009. ``{CitySim: Comprehensive micro-simulation
+  of resource flows for sustainable urban planning}.'' In \emph{Proceedings of
+  BS2009: 11th International Building Performance Simulation Association
+  Conference,} Glasgow, Scotland. Jul..
+
+\bibitem[Schlueter and Thesseling(2009)]{Schlueter2009}
+Schlueter, Arno, and Frank Thesseling. 2009. ``{Building information model
+  based energy/exergy performance assessment in early design stages}.''
+  \emph{Automation in Construction} 18 (2): 153--163.
+
+\bibitem[{United Nations}(2014)]{UnitedNations:2014vn}
+{United Nations}. 2014. ``{World Urbanization Prospects: 2014 Update}.''
+  1--32.
+
+\end{thebibliography}
