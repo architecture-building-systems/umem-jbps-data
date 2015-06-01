@@ -1,4 +1,4 @@
-\begin{thebibliography}{9}
+\begin{thebibliography}{18}
 \newcommand{\enquote}[1]{``#1''}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\normalfont{#1}}
@@ -7,6 +7,11 @@
   \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
   \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
   \urlstyle{rm}\Url}\fi
+
+\bibitem[Bueno et~al.(2011)Bueno, Norford, Pigeon, and Britter]{Bueno:2011hi}
+Bueno, Bruno, Leslie~K Norford, Gr{\'e}goire Pigeon, and Rex Britter. 2011.
+  ``{Combining a Detailed Building Energy Model with a Physically-Based Urban
+  Canopy Model}.'' \emph{Boundary-Layer Meteorology} 140 (3): 471--489.
 
 \bibitem[Dorer et~al.(2013)Dorer, Allegrini, Orehounig, Moonen, Upadhyay,
   K{\"a}mpf, and Carmeliet]{Dorer:2013vt}
@@ -18,6 +23,11 @@ Dorer, Viktor, Jonas Allegrini, Kristina Orehounig, Peter Moonen, Govinda
   Chambery, France: International Building Performance Simulation Association.
   Aug..
 
+\bibitem[Hersberger and Sagerschnig(2013)]{barbara:2015tz}
+Hersberger, Christian, and Carina Sagerschnig. 2013. ``{Thermal Modelling of a
+  Low Exergy HVAC System in EnergyPlus: A Case Study}.'' In \emph{CISBAT,}
+  1139--1144. Lausanne, Switzerland. Sep..
+
 \bibitem[{JModelica}(2014)]{Anonymous:ZZTfF80-}
 {JModelica}. 2014. ``{http://www.jmodelica.org/FMILibrary}.''
   \urlprefix\url{http://www.jmodelica.org/FMILibrary}.
@@ -26,6 +36,20 @@ Dorer, Viktor, Jonas Allegrini, Kristina Orehounig, Peter Moonen, Govinda
 Keirstead, James, Mark Jennings, and Aruna Sivakumar. 2012. ``{A review of
   urban energy system models: Approaches, challenges and opportunities}.''
   \emph{Renewable and Sustainable Energy Reviews} 16 (6): 3847--3866.
+
+\bibitem[Lawrie et~al.(2001)Lawrie, Winkelmann, Buhl, and Huang]{Lawrie:2001vf}
+Lawrie, L~K, Fred~C Winkelmann, Fred Buhl, and Joe~J Huang. 2001.
+  ``{EnergyPlus: creating a new-generation building energy simulation
+  program}.'' \emph{Energy and Buildings} 33 (4): 319--331.
+
+\bibitem[Miller and Schlueter()]{Miller:tg}
+Miller, C, and Arno Schlueter. ????. ``{Forensically Discovering Simulation
+  Feedback Knowledge from a Campus Energy Information System}.''
+  \emph{researchgate.net} .
+
+\bibitem[Miller and Sekhar(2010)]{Miller:2010wa}
+Miller, Clayton, and Chandra Sekhar. 2010. ``{Modeling of the Single Coil, Twin
+  Fan Air-Conditioning System in EnergyPlus}.'' In \emph{SimBuild 2010,} .
 
 \bibitem[Miller et~al.(2014)Miller, Thomas, Irigoyen, Hersberger, Nagy, Rossi,
   and Schlueter]{Miller:2014tu}
@@ -55,13 +79,38 @@ Robinson, D, Fr{\'e}d{\'e}ric Haldi, J~K{\"a}mpf, Philippe Leroux, Diane Perez,
   BS2009: 11th International Building Performance Simulation Association
   Conference,} Glasgow, Scotland. Jul..
 
+\bibitem[Samuelson, Ghorayshi, and Reinhart(2015)]{Samuelson:2015jg}
+Samuelson, Holly~W, Arash Ghorayshi, and Christoph~F Reinhart. 2015.
+  ``{Analysis of a simplified calibration procedure for 18 design-phase
+  building energy models}.'' \emph{Journal of Building Performance Simulation}
+  1--13.
+
 \bibitem[Schlueter and Thesseling(2009)]{Schlueter2009}
 Schlueter, Arno, and Frank Thesseling. 2009. ``{Building information model
   based energy/exergy performance assessment in early design stages}.''
   \emph{Automation in Construction} 18 (2): 153--163.
 
+\bibitem[Thomas et~al.(2014)Thomas, Miller, K{\"a}mpf, and
+  Schlueter]{thomas2014multiscale}
+Thomas, Daren, Clayton Miller, J{\'e}r{\^o}me K{\"a}mpf, and Arno Schlueter.
+  2014. ``{Multiscale co-simulation of EnergyPlus and CitySim models derived
+  from a building information model}.'' In \emph{Bausim 2014: Fifth
+  German-Austrian IBPSA Conference,} 469--476.
+
+\bibitem[Thomas and Schlueter(2012)]{Thomas:2012wj}
+Thomas, Daren, and Arno Schlueter. 2012. ``{Customizable continuous building
+  simulation using the design performance toolkit and Kepler scientific
+  workflows}.'' In \emph{Proceedings of ECPPM 2012: eWork and eBusiness in
+  Architecture, Engineering and Construction,} 17--22. Rekyjavik, Iceland: CRC
+  Press.
+
 \bibitem[{United Nations}(2014)]{UnitedNations:2014vn}
 {United Nations}. 2014. ``{World Urbanization Prospects: 2014 Update}.''
   1--32.
+
+\bibitem[Yang et~al.(2012)Yang, Zhao, Bruse, and Meng]{Yang:2012cr}
+Yang, Xiaoshan, Lihua Zhao, Michael Bruse, and Qinglin Meng. 2012. ``{An
+  integrated simulation method for building energy performance assessment in
+  urban environments}.'' \emph{Energy and Buildings} 54: 243--251.
 
 \end{thebibliography}
