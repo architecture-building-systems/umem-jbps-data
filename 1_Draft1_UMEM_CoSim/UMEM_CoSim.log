@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.3.11)  1 JUN 2015 14:58
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.3.11)  1 JUN 2015 17:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -429,22 +429,13 @@ Package pdftex.def Info: figures/UMEM_overview_new.pdf used on input line 122.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 Overfull \vbox (29.0pt too high) has occurred while \output is active []
 
 
 Overfull \vbox (741.135pt too high) has occurred while \output is active []
 
 
-[2] <figures/UMEM_Workflow.pdf, id=22, 216.23785pt x 298.75415pt>
-File: figures/UMEM_Workflow.pdf Graphic file (type pdf)
-
-<use figures/UMEM_Workflow.pdf>
-Package pdftex.def Info: figures/UMEM_Workflow.pdf used on input line 157.
-(pdftex.def)             Requested size: 216.2373pt x 298.75342pt.
-
+[2]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -455,6 +446,13 @@ Overfull \vbox (741.135pt too high) has occurred while \output is active []
 
 
 [3 <./figures/UMEM_overview_new.pdf>]
+<figures/UMEM_Workflow.pdf, id=56, 216.23785pt x 298.75415pt>
+File: figures/UMEM_Workflow.pdf Graphic file (type pdf)
+
+<use figures/UMEM_Workflow.pdf>
+Package pdftex.def Info: figures/UMEM_Workflow.pdf used on input line 152.
+(pdftex.def)             Requested size: 216.2373pt x 298.75342pt.
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -469,254 +467,13 @@ Overfull \vbox (741.135pt too high) has occurred while \output is active []
 File: figures/UMEM_FMU_Overview.pdf Graphic file (type pdf)
 
 <use figures/UMEM_FMU_Overview.pdf>
-Package pdftex.def Info: figures/UMEM_FMU_Overview.pdf used on input line 199.
+Package pdftex.def Info: figures/UMEM_FMU_Overview.pdf used on input line 165.
 (pdftex.def)             Requested size: 216.2373pt x 119.50114pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 223--223
-[]\OT1/lmr/bx/n/11 Object
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 223--223
-[]\OT1/lmr/bx/n/11 Variable
- []
-
-
-Overfull \hbox (2.80386pt too wide) in paragraph at lines 225--225
-[]\OT1/lmr/m/n/11 Outdoor| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 225--225
-[]\OT1/lmr/m/n/11 Outdoor
- []
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 225.
+(Font)              size <5> substituted on input line 218.
 
-
-Underfull \hbox (badness 1609) in paragraph at lines 225--226
-[]\OT1/lmr/m/n/11 The out-door dry-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 225--226
-\OT1/lmr/m/n/11 bulb tem-per-a-ture
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 227--227
-[]\OT1/lmr/m/n/11 Outdoor
- []
-
-
-Underfull \hbox (badness 2401) in paragraph at lines 227--228
-\OT1/lmr/m/n/11 point tem-per-a-ture
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 229--229
-[]\OT1/lmr/m/n/11 Outdoor
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 229--229
-\OT1/lmr/m/n/11 Rel-a-tive
- []
-
-
-Underfull \hbox (badness 2334) in paragraph at lines 229--230
-\OT1/lmr/m/n/11 tive hu-mid-ity ex-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 231--232
-[]\OT1/lmr/m/n/11 Diffuse hor-i-zon-tal
- []
-
-
-Underfull \hbox (badness 4403) in paragraph at lines 233--233
-[]\OT1/lmr/m/n/11 Direct So-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 235--235
-[]\OT1/lmr/m/n/11 Wind
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 237--237
-[]\OT1/lmr/m/n/11 Wind
- []
-
-
-Underfull \hbox (badness 3460) in paragraph at lines 237--238
-\OT1/lmr/m/n/11 in de-grees (N=0,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 237--238
-\OT1/lmr/m/n/11 E=90, S=180,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 239--240
-[]\OT1/lmr/m/n/11 Fraction of the
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 239--240
-\OT1/lmr/m/n/11 max-i-mum oc-cu-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 239--240
-\OT1/lmr/m/n/11 pa-tion (0.0-1.0)
- []
-
-
-Underfull \hbox (badness 1762) in paragraph at lines 239--240
-\OT1/lmr/m/n/11 gy-Plus oc-cu-pa-tion
- []
-
-
-Underfull \hbox (badness 1424) in paragraph at lines 239--240
-\OT1/lmr/m/n/11 sched-ule with the
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 250--250
-[]\OT1/lmr/bx/n/11 Object
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 250--250
-[]\OT1/lmr/bx/n/11 Variable
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 252--252
-[]\OT1/lmr/m/n/11 Wall,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 252--252
-[]\OT1/lmr/m/n/11 Outside
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 252--252
-\OT1/lmr/m/n/11 Sur-face
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 252--252
-\OT1/lmr/m/n/11 Tem-per-a-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 252--253
-[]\OT1/lmr/m/n/11 The tem-per-a-ture
- []
-
-
-Underfull \hbox (badness 1024) in paragraph at lines 252--253
-\OT1/lmr/m/n/11 on the out-side of
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 254--254
-[]\OT1/lmr/m/n/11 Average
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 254--254
-\OT1/lmr/m/n/11 Out-side
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 254--254
-\OT1/lmr/m/n/11 Sur-face
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 254--254
-\OT1/lmr/m/n/11 Tem-per-a-
- []
-
-
-Underfull \hbox (badness 2401) in paragraph at lines 254--255
-\OT1/lmr/m/n/11 er-age tem-per-a-ture
- []
-
-
-Underfull \hbox (badness 1275) in paragraph at lines 254--255
-\OT1/lmr/m/n/11 of the sur-face on
- []
-
-
-Underfull \hbox (badness 2418) in paragraph at lines 254--255
-\OT1/lmr/m/n/11 This re-spects the
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 254--255
-\OT1/lmr/m/n/11 tem-per-a-tures of
- []
-
-
-Underfull \hbox (badness 1776) in paragraph at lines 254--255
-\OT1/lmr/m/n/11 wall, weighted by
- []
-
-
-Underfull \hbox (badness 1215) in paragraph at lines 256--257
-\OT1/lmr/m/n/11 in Joules used in
- []
-
-
-Underfull \hbox (badness 1215) in paragraph at lines 258--259
-\OT1/lmr/m/n/11 in Joules used in
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 260--260
-\OT1/lmr/m/n/11 Air Tem-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 260--261
-[]\OT1/lmr/m/n/11 The mean air
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 262--262
-[]\OT1/lmr/m/n/11 Ventilation
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 262--262
-\OT1/lmr/m/n/11 Vol-ume
- []
-
-
-Underfull \hbox (badness 2310) in paragraph at lines 262--263
-[]\OT1/lmr/m/n/11 The flow rate in
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 262--263
-\OT1/cmr/m/n/10.95 m[]\OML/lmm/m/it/11 =\OT1/cmr/m/n/10.95 s$ \OT1/lmr/m/n/11 (
-stan-dard
- []
-
-<figures/campuscitysim.png, id=87, 1041.1397pt x 621.82312pt>
-File: figures/campuscitysim.png Graphic file (type png)
-
-<use figures/campuscitysim.png>
-Package pdftex.def Info: figures/campuscitysim.png used on input line 286.
-(pdftex.def)             Requested size: 312.34431pt x 186.54837pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -728,14 +485,24 @@ Overfull \vbox (741.135pt too high) has occurred while \output is active []
 
 
 [5 <./figures/UMEM_FMU_Overview.pdf>]
+<figures/campuscitysim.png, id=123, 1041.1397pt x 621.82312pt>
+File: figures/campuscitysim.png Graphic file (type png)
+
+<use figures/campuscitysim.png>
+Package pdftex.def Info: figures/campuscitysim.png used on input line 236.
+(pdftex.def)             Requested size: 312.34431pt x 186.54837pt.
+
 <figures/pointbreakdown_anon.pdf, id=125, 244.9953pt x 325.215pt>
 File: figures/pointbreakdown_anon.pdf Graphic file (type pdf)
 
 <use figures/pointbreakdown_anon.pdf>
-Package pdftex.def Info: figures/pointbreakdown_anon.pdf used on input line 295
+Package pdftex.def Info: figures/pointbreakdown_anon.pdf used on input line 245
 .
 (pdftex.def)             Requested size: 244.99469pt x 325.2142pt.
  (./UMEM_CoSim.bbl
+Underfull \vbox (badness 5147) has occurred while \output is active []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -745,7 +512,7 @@ Overfull \vbox (29.0pt too high) has occurred while \output is active []
 Overfull \vbox (741.135pt too high) has occurred while \output is active []
 
 
-[6]
+[6 <./figures/campuscitysim.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -755,7 +522,7 @@ Overfull \vbox (29.0pt too high) has occurred while \output is active []
 Overfull \vbox (741.135pt too high) has occurred while \output is active []
 
 
-[7 <./figures/campuscitysim.png>]
+[7 <./figures/pointbreakdown_anon.pdf>])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -765,53 +532,44 @@ Overfull \vbox (29.0pt too high) has occurred while \output is active []
 Overfull \vbox (741.135pt too high) has occurred while \output is active []
 
 
-[8 <./figures/pointbreakdown_anon.pdf>])
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \vbox (29.0pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (741.135pt too high) has occurred while \output is active []
-
-
-[9] (./UMEM_CoSim.aux)
+[8] (./UMEM_CoSim.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
 
  ) 
 Here is how much of TeX's memory you used:
- 3523 strings out of 493315
- 46208 string characters out of 6137904
- 116118 words of memory out of 5000000
- 6885 multiletter control sequences out of 15000+600000
- 72398 words of font info for 67 fonts, out of 8000000 for 9000
+ 3524 strings out of 493315
+ 46161 string characters out of 6137904
+ 111076 words of memory out of 5000000
+ 6884 multiletter control sequences out of 15000+600000
+ 75642 words of font info for 69 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 42i,13n,27p,1404b,305s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,12n,27p,1539b,289s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/lo
-cal/texlive/2013/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texliv
-e/2013/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}</usr/local/texlive/2013/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2013/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2013/texmf-dist/f
-onts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1
-/public/lm/lmbx9.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/lm/
-lmbxi10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/lm/lmmi12.pf
-b></usr/local/texlive/2013/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/loc
-al/texlive/2013/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/
-2013/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2013/texmf-d
-ist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2013/texmf-dist/fonts/ty
-pe1/public/lm/lmr9.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/l
-m/lmri10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/lm/lmri12.p
-fb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/lm/lmri8.pfb></usr/lo
-cal/texlive/2013/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive
-/2013/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></usr/local/texlive/2013/texmf
--dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2013/texmf-dist/fonts
-/type1/urw/ncntrsbk/uncr8a.pfb>
-Output written on UMEM_CoSim.pdf (9 pages, 1370085 bytes).
+cal/texlive/2013/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/20
+13/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/local/texlive/2013/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2013/texmf-dist
+/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2013/texmf-dist/fonts/typ
+e1/public/lm/lmbx8.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/l
+m/lmbx9.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/lm/lmbxi10.p
+fb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/lo
+cal/texlive/2013/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive
+/2013/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2013/texmf
+-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2013/texmf-dist/fonts
+/type1/public/lm/lmr6.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/publi
+c/lm/lmr7.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/lm/lmr8.pf
+b></usr/local/texlive/2013/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/loca
+l/texlive/2013/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/
+2013/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2013/texmf
+-dist/fonts/type1/public/lm/lmri8.pfb></usr/local/texlive/2013/texmf-dist/fonts
+/type1/public/lm/lmsy6.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/publ
+ic/lm/lmsy7.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/ncntrsbk/un
+cr8a.pfb>
+Output written on UMEM_CoSim.pdf (8 pages, 1400616 bytes).
 PDF statistics:
- 212 PDF objects out of 1000 (max. 8388607)
- 123 compressed objects within 2 object streams
+ 215 PDF objects out of 1000 (max. 8388607)
+ 126 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  26 words of extra memory for PDF output out of 10000 (max. 10000000)
 

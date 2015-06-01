@@ -1,4 +1,4 @@
-\begin{thebibliography}{18}
+\begin{thebibliography}{16}
 \newcommand{\enquote}[1]{``#1''}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\normalfont{#1}}
@@ -42,11 +42,6 @@ Lawrie, L~K, Fred~C Winkelmann, Fred Buhl, and Joe~J Huang. 2001.
   ``{EnergyPlus: creating a new-generation building energy simulation
   program}.'' \emph{Energy and Buildings} 33 (4): 319--331.
 
-\bibitem[Miller and Schlueter()]{Miller:tg}
-Miller, C, and Arno Schlueter. ????. ``{Forensically Discovering Simulation
-  Feedback Knowledge from a Campus Energy Information System}.''
-  \emph{researchgate.net} .
-
 \bibitem[Miller and Sekhar(2010)]{Miller:2010wa}
 Miller, Clayton, and Chandra Sekhar. 2010. ``{Modeling of the Single Coil, Twin
   Fan Air-Conditioning System in EnergyPlus}.'' In \emph{SimBuild 2010,} .
@@ -58,6 +53,12 @@ Miller, Clayton, Daren Thomas, Silvia~Domingo Irigoyen, Christian Hersberger,
   EnergyPlus model calibration for retrofit analysis of a historically listed
   building in Switzerland}.'' In \emph{In Proceedings of SimBuild 2014: 2014
   ASHRAE/IBPSA-USA Building Simulation Conference,} Atlanta, GA, USA. Sep..
+
+\bibitem[Miller et~al.(2015)Miller, Thomas, K{\"a}mpf, and
+  Schlueter]{Miller:2015vk}
+Miller, Clayton, Daren Thomas, J{\'e}r{\^o}me K{\"a}mpf, and Arno Schlueter.
+  2015. ``{Long Wave Radiation Exchange for Urban Scale Modeling within a
+  Co-Simulation Environment}.'' In \emph{CISBAT,} Lausanne, Switzerland. Sep..
 
 \bibitem[Nouidui, Wetter, and Zuo(2014)]{Nouidui:2014hq}
 Nouidui, Thierry, Michael Wetter, and Wangda Zuo. 2014. ``{Functional mock-up
@@ -79,12 +80,6 @@ Robinson, D, Fr{\'e}d{\'e}ric Haldi, J~K{\"a}mpf, Philippe Leroux, Diane Perez,
   BS2009: 11th International Building Performance Simulation Association
   Conference,} Glasgow, Scotland. Jul..
 
-\bibitem[Samuelson, Ghorayshi, and Reinhart(2015)]{Samuelson:2015jg}
-Samuelson, Holly~W, Arash Ghorayshi, and Christoph~F Reinhart. 2015.
-  ``{Analysis of a simplified calibration procedure for 18 design-phase
-  building energy models}.'' \emph{Journal of Building Performance Simulation}
-  1--13.
-
 \bibitem[Schlueter and Thesseling(2009)]{Schlueter2009}
 Schlueter, Arno, and Frank Thesseling. 2009. ``{Building information model
   based energy/exergy performance assessment in early design stages}.''
@@ -92,17 +87,9 @@ Schlueter, Arno, and Frank Thesseling. 2009. ``{Building information model
 
 \bibitem[Thomas et~al.(2014)Thomas, Miller, K{\"a}mpf, and
   Schlueter]{thomas2014multiscale}
-Thomas, Daren, Clayton Miller, J{\'e}r{\^o}me K{\"a}mpf, and Arno Schlueter.
-  2014. ``{Multiscale co-simulation of EnergyPlus and CitySim models derived
-  from a building information model}.'' In \emph{Bausim 2014: Fifth
-  German-Austrian IBPSA Conference,} 469--476.
-
-\bibitem[Thomas and Schlueter(2012)]{Thomas:2012wj}
-Thomas, Daren, and Arno Schlueter. 2012. ``{Customizable continuous building
-  simulation using the design performance toolkit and Kepler scientific
-  workflows}.'' In \emph{Proceedings of ECPPM 2012: eWork and eBusiness in
-  Architecture, Engineering and Construction,} 17--22. Rekyjavik, Iceland: CRC
-  Press.
+Thomas, D, C~Miller, J~K{\"a}mpf, and Arno Schlueter. 2014. ``{Multiscale
+  co-simulation of EnergyPlus and CitySim models derived from a building
+  information model}.'' \emph{Bausim 2014: Fifth German- {\ldots}} .
 
 \bibitem[{United Nations}(2014)]{UnitedNations:2014vn}
 {United Nations}. 2014. ``{World Urbanization Prospects: 2014 Update}.''

@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex UMEM_CoSim"] 1433163402 "UMEM_CoSim.aux" "UMEM_CoSim.bbl" "UMEM_CoSim" 1433163495
+["bibtex UMEM_CoSim"] 1433172737 "UMEM_CoSim.aux" "UMEM_CoSim.bbl" "UMEM_CoSim" 1433172870
   "./tBPS.bst" 1417086006 37924 49268e68fade4ed80406c1b30359b191 ""
-  "UMEM_CoSim.aux" 1433163495 3504 2e45b10bbbfdcc28482b185fd0ab988a ""
+  "UMEM_CoSim.aux" 1433172869 3445 bf1e4158994cfb52b3ccfc7b8ced2aa4 ""
   "UMEM_CoSim.bcf" 0 -1 0 ""
-  "UMEM_CoSim.bib" 1433162358 10783 7dbee806346bd539158a92e2eec6d837 ""
+  "UMEM_CoSim.bib" 1433166200 11032 76db054ecba7e0b597a43941d0072df5 ""
   (generated)
   "UMEM_CoSim.bbl"
   "UMEM_CoSim.blg"
-["pdflatex"] 1433163494 "UMEM_CoSim.tex" "UMEM_CoSim.pdf" "UMEM_CoSim" 1433163495
+["pdflatex"] 1433172868 "UMEM_CoSim.tex" "UMEM_CoSim.pdf" "UMEM_CoSim" 1433172870
   "/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii" 1337017135 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/etexcmds.sty" 1335995445 7612 c47308d923ec19888707b0f1792b326a ""
   "/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/ifluatex.sty" 1303254447 7324 11d14f318d865f420e692d4e6c9c18c3 ""
@@ -42,9 +42,9 @@
   "/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/kvoptions.sty" 1335995445 22417 c74ff4af6a1aa2b65d1924020edbbe11 ""
   "/usr/local/texlive/2013/texmf-dist/tex/latex/pdftex-def/pdftex.def" 1306616590 55368 3c8a0d99822330f2dfabc0dfb09ce897 ""
   "/usr/local/texlive/2013/texmf-dist/tex/latex/subfigure/subfigure.cfg" 1167176009 2062 a0e7d66e09e508f51289a656aec06ed2 ""
-  "UMEM_CoSim.aux" 1433163495 3504 2e45b10bbbfdcc28482b185fd0ab988a ""
-  "UMEM_CoSim.bbl" 1433163402 5999 633fe8d1bcb89fe623ed9435f560811e "bibtex UMEM_CoSim"
-  "UMEM_CoSim.tex" 1433163493 22143 cce5076d9de39f2b98fb722680e831ef ""
+  "UMEM_CoSim.aux" 1433172869 3445 bf1e4158994cfb52b3ccfc7b8ced2aa4 ""
+  "UMEM_CoSim.bbl" 1433172737 5386 3daca55ef8c097c17b89326e87352d54 "bibtex UMEM_CoSim"
+  "UMEM_CoSim.tex" 1433172868 22837 64543b7cba0441a8848a76f82d8064b4 ""
   "amsbsy.sty" 1269927300 3633 31940cb478658b87e8467db04549ffd3 ""
   "amsfonts.sty" 1269927300 7992 7a12630bc841f1c895895a7b9763b259 ""
   "amsmath.sty" 1269927300 79756 c9b39210cd9d3168825ff6f880d43821 ""
@@ -62,7 +62,7 @@
   "tBPS2e.cls" 1417098538 46424 03045583040a952b5ef3e5b4c4ae0ee8 ""
   (generated)
   "UMEM_CoSim.aux"
-  "senu_gr1-eps-converted-to.pdf"
-  "UMEM_CoSim.pdf"
   "senu_gr2-eps-converted-to.pdf"
   "UMEM_CoSim.log"
+  "senu_gr1-eps-converted-to.pdf"
+  "UMEM_CoSim.pdf"

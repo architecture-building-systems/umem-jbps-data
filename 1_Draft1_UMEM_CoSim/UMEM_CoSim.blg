@@ -4,49 +4,48 @@ The top-level auxiliary file: UMEM_CoSim.aux
 The style file: tBPS.bst
 Database file #1: UMEM_CoSim.bib
 Warning--entry type for "Anonymous:ZZTfF80-" isn't style-file defined
---line 217 of file UMEM_CoSim.bib
+--line 144 of file UMEM_CoSim.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-Warning--empty year in Miller:tg; set to ????
 Warning--empty journal in UnitedNations:2014vn
-You've used 18 entries,
+You've used 16 entries,
             3619 wiz_defined-function locations,
-            833 strings with 9767 characters,
-and the built_in function-call counts, 14056 in all, are:
-= -- 1152
-> -- 797
+            818 strings with 9269 characters,
+and the built_in function-call counts, 12500 in all, are:
+= -- 1005
+> -- 743
 < -- 0
-+ -- 403
-- -- 218
-* -- 987
-:= -- 2009
-add.period$ -- 44
-call.type$ -- 18
-change.case$ -- 132
-chr.to.int$ -- 19
-cite$ -- 20
-duplicate$ -- 1023
-empty$ -- 996
-format.name$ -- 265
-if$ -- 2895
++ -- 383
+- -- 204
+* -- 891
+:= -- 1800
+add.period$ -- 39
+call.type$ -- 16
+change.case$ -- 121
+chr.to.int$ -- 17
+cite$ -- 17
+duplicate$ -- 904
+empty$ -- 871
+format.name$ -- 245
+if$ -- 2552
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 194
-newline$ -- 64
-num.names$ -- 72
-pop$ -- 586
+missing$ -- 176
+newline$ -- 58
+num.names$ -- 64
+pop$ -- 522
 preamble$ -- 1
-purify$ -- 132
+purify$ -- 121
 quote$ -- 0
-skip$ -- 491
+skip$ -- 425
 stack$ -- 0
-substring$ -- 568
-swap$ -- 487
+substring$ -- 470
+swap$ -- 430
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 162
-warning$ -- 2
-while$ -- 105
+type$ -- 144
+warning$ -- 1
+while$ -- 88
 width$ -- 0
-write$ -- 212
-(There were 3 warnings)
+write$ -- 190
+(There were 2 warnings)
