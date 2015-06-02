@@ -1,4 +1,4 @@
-\begin{thebibliography}{16}
+\begin{thebibliography}{17}
 \newcommand{\enquote}[1]{``#1''}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\normalfont{#1}}
@@ -79,6 +79,12 @@ Robinson, D, Fr{\'e}d{\'e}ric Haldi, J~K{\"a}mpf, Philippe Leroux, Diane Perez,
   of resource flows for sustainable urban planning}.'' In \emph{Proceedings of
   BS2009: 11th International Building Performance Simulation Association
   Conference,} Glasgow, Scotland. Jul..
+
+\bibitem[Samuelson, Ghorayshi, and Reinhart(2015)]{Samuelson:2015jg}
+Samuelson, Holly~W, Arash Ghorayshi, and Christoph~F Reinhart. 2015.
+  ``{Analysis of a simplified calibration procedure for 18 design-phase
+  building energy models}.'' \emph{Journal of Building Performance Simulation}
+  1--13.
 
 \bibitem[Schlueter and Thesseling(2009)]{Schlueter2009}
 Schlueter, Arno, and Frank Thesseling. 2009. ``{Building information model

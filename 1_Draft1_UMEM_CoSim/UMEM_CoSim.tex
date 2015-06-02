@@ -188,7 +188,9 @@ On an hourly basis, CitySim performs a heating and cooling needs prediction step
  & Wind Speed & The outdoor wind speed in m/s \\
  & Wind Direction & The wind direction in degrees (N=0, E=90, S=180, W=270) \\
  \hline
- Long Wave Radiation & Environmental Radiant Temp. & The calculated $T_{env}$ from the sky, ground, and surrounding surfaces \\
+ Long Wave Radiation & Environmental Radiant Temp. & Calculated $T_{env}$ from the sky, ground, and surrounding surfaces \\
+ & Environmental Radiant Heat & Calculated $h_{env}$ from the sky, ground, and surrounding surfaces \\
+ & Gain Coefficient \\
  \hline
 Zone & Occupation & Fraction of the maximum occupation (0.0-1.0) overrides the EnergyPlus\\&& occupation schedule with the CitySim stochastic schedule. \\
 \botrule
@@ -214,20 +216,20 @@ Zone & Total Heating Energy & The heating energy in Joules used in this timestep
 \label{FMUexports}
 \end{table}
 
-
 \subsection{Co-simulation simplified calibration}
-% {\color{red}This section will describe in detail the method for comparing the CitySim vs. EnergyPlus vs. Co-simulation and how we use the measured data as a comparison}
+A novel aspect of this analysis is the comparison of actual measured performance of several buildings on campus with the simulation results of the co-simulation. A simplified calibration procedure is adapted from previous research to compare the measured heating and cooling data available on campus with the three simulation scenarios: EnergyPlus solo, CitySim solo, and the couple co-simulation \citep{Samuelson:2015jg}. This calibration procedure was utilized in the performance reconciliation of 18 buildings that were built according to the LEED Canada protocol and were under review of actualized performance. This protocol is unique in its analysis process to uncover design model deficiencies in a step-wise manner, utilizing the most easily accessible knowledge first and working towards equilibrium between measured and simulated. An appropriate balance between effort of implementation and value generated through the calibration process. The following steps are the general procedure applied to the targeted buildings:
+
+\begin{enumerate}
+  \item Using the local weather conditions for the simulation period
+  \item Update simulation based on custom lighting schedules and power densities extracted from the measured data
+  \item Update simulation based on custom plug load schedules and power densities extracted from the measured data
+  \item Account for \emph{unregulated} building loads such as experimental equipment and process loads
+\end{enumerate}
  
 \section{Implementation}\label{Implementation}
 \subsection{Campus case study}
 {\color{red}This section will describe the ETH Hoenggerberg case study}
 
-% \begin{figure}
-% \centering
-% \includegraphics[scale=0.1]{figures/campusmap}
-% \caption{Map of the case study campus}
-% \label{fig:campusmap}
-% \end{figure}
 
 \subsection{Model development}
 {\color{red}This section will describe the development of the Revit, CitySim and EnergyPlus models}
@@ -246,6 +248,9 @@ Zone & Total Heating Energy & The heating energy in Joules used in this timestep
 \caption{Available performance measurement points}
 \label{fig:pointgraph}
 \end{figure}
+
+{\color{red}Insert the campus map illustrating the targeted buildings.}
+
 
 \section{Results}
 {\color{red}Here we show all of the data of the comparison between the simulation outputs and the measured data from the campus}
