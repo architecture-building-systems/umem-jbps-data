@@ -1,4 +1,4 @@
-! Program Version,EnergyPlus, Version 8.2.0-e53a815bb2, YMD=2015.06.15 16:23,IDD_Version 8.2.0
+! Program Version,EnergyPlus, Version 8.2.0-e53a815bb2, YMD=2015.06.17 14:35,IDD_Version 8.2.0
 ! Output:Variable Objects (applicable to this run)
 Output:Variable,*,Abx_E_NE: Average Air Temperature {K},hourly; !- HVAC Average []
 Output:Variable,*,Abx_E_NE: dT(CWater) {K},hourly; !- HVAC Average []

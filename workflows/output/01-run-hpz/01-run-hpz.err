@@ -1,4 +1,4 @@
-Program Version,EnergyPlus, Version 8.2.0-e53a815bb2, YMD=2015.06.15 16:23,IDD_Version 8.2.0
+Program Version,EnergyPlus, Version 8.2.0-e53a815bb2, YMD=2015.06.17 14:35,IDD_Version 8.2.0
    ** Warning ** Output:PreprocessorMessage="CustomWarningGenerator" has the following Warning condition:
    **   ~~~   ** Fix constant coefficients macro. Discuss with Carina.
    ** Warning ** Timestep: Requested number (1) is less than the suggested minimum of 4.
@@ -399,4 +399,4 @@ Program Version,EnergyPlus, Version 8.2.0-e53a815bb2, YMD=2015.06.15 16:23,IDD_V
    *************
    ************* EnergyPlus Warmup Error Summary. During Warmup: 0 Warning; 0 Severe Errors.
    ************* EnergyPlus Sizing Error Summary. During Sizing: 0 Warning; 0 Severe Errors.
-   ************* EnergyPlus Completed Successfully-- 70 Warning; 32 Severe Errors; Elapsed Time=00hr 02min 25.00sec
+   ************* EnergyPlus Completed Successfully-- 70 Warning; 32 Severe Errors; Elapsed Time=00hr 02min 21.00sec
