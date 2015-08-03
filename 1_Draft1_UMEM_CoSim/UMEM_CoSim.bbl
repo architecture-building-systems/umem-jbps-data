@@ -1,4 +1,4 @@
-\begin{thebibliography}{17}
+\begin{thebibliography}{16}
 \newcommand{\enquote}[1]{``#1''}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\normalfont{#1}}
@@ -27,10 +27,6 @@ Dorer, Viktor, Jonas Allegrini, Kristina Orehounig, Peter Moonen, Govinda
 Hersberger, Christian, and Carina Sagerschnig. 2013. ``{Thermal Modelling of a
   Low Exergy HVAC System in EnergyPlus: A Case Study}.'' In \emph{CISBAT,}
   1139--1144. Lausanne, Switzerland. Sep..
-
-\bibitem[{JModelica}(2014)]{Anonymous:ZZTfF80-}
-{JModelica}. 2014. ``{http://www.jmodelica.org/FMILibrary}.''
-  \urlprefix\url{http://www.jmodelica.org/FMILibrary}.
 
 \bibitem[Keirstead, Jennings, and Sivakumar(2012)]{Keirstead:2012ct}
 Keirstead, James, Mark Jennings, and Aruna Sivakumar. 2012. ``{A review of
