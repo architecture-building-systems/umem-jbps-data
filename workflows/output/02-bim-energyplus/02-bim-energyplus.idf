@@ -10,7 +10,7 @@ SimulationControl,
     Yes;                      !- Run Simulation for Weather File Run Periods
 
 Building,                 
-    RevitModel_nowindows,     !- Name
+    RevitModel,               !- Name
     0.0,                      !- North Axis
     Suburbs,                  !- Terrain
     0.04,                     !- Loads Convergence Tolerance Value
@@ -880,6 +880,11 @@ Material,
     0.7,                      !- Solar Absorptance
     0.7;                      !- Visible Absorptance
 
+WindowMaterial:SimpleGlazingSystem,
+    DefaultWindowMaterial_0.001,    !- Name
+    1.3000,                   !- UFactor
+    0.9000;                   !- Solar Heat Gain Coefficient
+
 Construction,             
     _dpv AW1 1995 WSV III,    !- Name
     _dpv SM1 Aussenputz_0.02,    !- Outside Layer
@@ -919,6 +924,10 @@ Construction,
     _dpv C1 Beton armiert mit 1% Stahl_0.2,    !- Layer 5
     _dpv SM2 Innenputz_0.02;    !- Layer 6
 
+Construction,             
+    DefaultWindowConstruction,    !- Name
+    DefaultWindowMaterial_0.001;    !- Outside Layer
+
 GlobalGeometryRules,      
     LowerLeftCorner,          !- Starting Vertex Position
     CounterClockWise,         !- Vertex Entry Direction
@@ -932,8 +941,8 @@ Zone,
     0.0,                      !- Z Origin
     1,                        !- Type
     1,                        !- Multiplier
-    6.4216,                   !- Ceiling Height
-    4076.7856,                !- Volume
+    6.3761,                   !- Ceiling Height
+    4047.9188,                !- Volume
     634.854,                  !- Floor Area
     ,                         !- Zone Inside Convection Algorithm
     ,                         !- Zone Outside Convection Algorithm
@@ -1042,14 +1051,14 @@ RoofCeiling:Detailed,
     autocalculate,            !- View Factor to Ground
     3,                        !- Number of Vertices
     4.29,                     !- Vertex 1 Xcoordinate
-    -7.3981,                  !- Vertex 1 Ycoordinate
+    -7.4052,                  !- Vertex 1 Ycoordinate
     4.0,                      !- Vertex 1 Zcoordinate
     4.29,                     !- Vertex 2 Xcoordinate
-    13.1727,                  !- Vertex 2 Ycoordinate
+    13.1798,                  !- Vertex 2 Ycoordinate
     4.0,                      !- Vertex 2 Zcoordinate
-    -6.3076,                  !- Vertex 3 Xcoordinate
+    -6.0025,                  !- Vertex 3 Xcoordinate
     2.8873,                   !- Vertex 3 Ycoordinate
-    10.1185;                  !- Vertex 3 Zcoordinate
+    9.9424;                   !- Vertex 3 Zcoordinate
 
 RoofCeiling:Detailed,     
     DpvRoof:1157058.1,        !- Name
@@ -1062,17 +1071,17 @@ RoofCeiling:Detailed,
     autocalculate,            !- View Factor to Ground
     4,                        !- Number of Vertices
     -25.295,                  !- Vertex 1 Xcoordinate
-    -7.3981,                  !- Vertex 1 Ycoordinate
+    -7.4052,                  !- Vertex 1 Ycoordinate
     4.0,                      !- Vertex 1 Zcoordinate
     4.29,                     !- Vertex 2 Xcoordinate
-    -7.3981,                  !- Vertex 2 Ycoordinate
+    -7.4052,                  !- Vertex 2 Ycoordinate
     4.0,                      !- Vertex 2 Zcoordinate
-    -6.3076,                  !- Vertex 3 Xcoordinate
+    -6.0025,                  !- Vertex 3 Xcoordinate
     2.8873,                   !- Vertex 3 Ycoordinate
-    10.1185,                  !- Vertex 3 Zcoordinate
-    -14.6974,                 !- Vertex 4 Xcoordinate
+    9.9424,                   !- Vertex 3 Zcoordinate
+    -15.0025,                 !- Vertex 4 Xcoordinate
     2.8873,                   !- Vertex 4 Ycoordinate
-    10.1185;                  !- Vertex 4 Zcoordinate
+    9.9424;                   !- Vertex 4 Zcoordinate
 
 RoofCeiling:Detailed,     
     DpvRoof:1157058.2,        !- Name
@@ -1084,17 +1093,17 @@ RoofCeiling:Detailed,
     WindExposed,              !- Wind Exposure
     autocalculate,            !- View Factor to Ground
     4,                        !- Number of Vertices
-    -14.6974,                 !- Vertex 1 Xcoordinate
+    -15.0025,                 !- Vertex 1 Xcoordinate
     2.8873,                   !- Vertex 1 Ycoordinate
-    10.1185,                  !- Vertex 1 Zcoordinate
-    -6.3076,                  !- Vertex 2 Xcoordinate
+    9.9424,                   !- Vertex 1 Zcoordinate
+    -6.0025,                  !- Vertex 2 Xcoordinate
     2.8873,                   !- Vertex 2 Ycoordinate
-    10.1185,                  !- Vertex 2 Zcoordinate
+    9.9424,                   !- Vertex 2 Zcoordinate
     4.29,                     !- Vertex 3 Xcoordinate
-    13.1727,                  !- Vertex 3 Ycoordinate
+    13.1798,                  !- Vertex 3 Ycoordinate
     4.0,                      !- Vertex 3 Zcoordinate
     -25.295,                  !- Vertex 4 Xcoordinate
-    13.1727,                  !- Vertex 4 Ycoordinate
+    13.1798,                  !- Vertex 4 Ycoordinate
     4.0;                      !- Vertex 4 Zcoordinate
 
 RoofCeiling:Detailed,     
@@ -1108,14 +1117,14 @@ RoofCeiling:Detailed,
     autocalculate,            !- View Factor to Ground
     3,                        !- Number of Vertices
     -25.295,                  !- Vertex 1 Xcoordinate
-    13.1727,                  !- Vertex 1 Ycoordinate
+    13.1798,                  !- Vertex 1 Ycoordinate
     4.0,                      !- Vertex 1 Zcoordinate
     -25.295,                  !- Vertex 2 Xcoordinate
-    -7.3981,                  !- Vertex 2 Ycoordinate
+    -7.4052,                  !- Vertex 2 Ycoordinate
     4.0,                      !- Vertex 2 Zcoordinate
-    -14.6974,                 !- Vertex 3 Xcoordinate
+    -15.0025,                 !- Vertex 3 Xcoordinate
     2.8873,                   !- Vertex 3 Ycoordinate
-    10.1185;                  !- Vertex 3 Zcoordinate
+    9.9424;                   !- Vertex 3 Zcoordinate
 
 Floor:Detailed,           
     DpvFloor:1157042,         !- Name
@@ -1139,6 +1148,244 @@ Floor:Detailed,
     -25.55,                   !- Vertex 4 Xcoordinate
     -7.6602,                  !- Vertex 4 Ycoordinate
     0.0;                      !- Vertex 4 Zcoordinate
+
+FenestrationSurface:Detailed,
+    DpvWindow:1157096,        !- Name
+    Window,                   !- Surface Type
+    DefaultWindowConstruction,    !- Construction Name
+    DpvWall:1157026,          !- Building Surface Name
+    ,                         !- Outside Boundary Condition Object
+    autocalculate,            !- View Factor to Ground
+    ,                         !- Shading Control Name
+    DefaultWindowFrameAndDivider,    !- Frame and Divider Name
+    1,                        !- Multiplier
+    autocalculate,            !- Number of Vertices
+    -22.295,                  !- Vertex 1 Xcoordinate
+    13.3873,                  !- Vertex 1 Ycoordinate
+    3.007,                    !- Vertex 1 Zcoordinate
+    -20.668,                  !- Vertex 2 Xcoordinate
+    13.3873,                  !- Vertex 2 Ycoordinate
+    3.007,                    !- Vertex 2 Zcoordinate
+    -20.668,                  !- Vertex 3 Xcoordinate
+    13.3873,                  !- Vertex 3 Ycoordinate
+    0.947,                    !- Vertex 3 Zcoordinate
+    -22.295,                  !- Vertex 4 Xcoordinate
+    13.3873,                  !- Vertex 4 Ycoordinate
+    0.947;                    !- Vertex 4 Zcoordinate
+
+FenestrationSurface:Detailed,
+    DpvWindow:1157123,        !- Name
+    Window,                   !- Surface Type
+    DefaultWindowConstruction,    !- Construction Name
+    DpvWall:1157026,          !- Building Surface Name
+    ,                         !- Outside Boundary Condition Object
+    autocalculate,            !- View Factor to Ground
+    ,                         !- Shading Control Name
+    DefaultWindowFrameAndDivider,    !- Frame and Divider Name
+    1,                        !- Multiplier
+    autocalculate,            !- Number of Vertices
+    -17.668,                  !- Vertex 1 Xcoordinate
+    13.3873,                  !- Vertex 1 Ycoordinate
+    3.007,                    !- Vertex 1 Zcoordinate
+    -16.041,                  !- Vertex 2 Xcoordinate
+    13.3873,                  !- Vertex 2 Ycoordinate
+    3.007,                    !- Vertex 2 Zcoordinate
+    -16.041,                  !- Vertex 3 Xcoordinate
+    13.3873,                  !- Vertex 3 Ycoordinate
+    0.947,                    !- Vertex 3 Zcoordinate
+    -17.668,                  !- Vertex 4 Xcoordinate
+    13.3873,                  !- Vertex 4 Ycoordinate
+    0.947;                    !- Vertex 4 Zcoordinate
+
+FenestrationSurface:Detailed,
+    DpvWindow:1157185,        !- Name
+    Window,                   !- Surface Type
+    DefaultWindowConstruction,    !- Construction Name
+    DpvWall:1157026,          !- Building Surface Name
+    ,                         !- Outside Boundary Condition Object
+    autocalculate,            !- View Factor to Ground
+    ,                         !- Shading Control Name
+    DefaultWindowFrameAndDivider,    !- Frame and Divider Name
+    1,                        !- Multiplier
+    autocalculate,            !- Number of Vertices
+    -5.337,                   !- Vertex 1 Xcoordinate
+    13.3873,                  !- Vertex 1 Ycoordinate
+    3.007,                    !- Vertex 1 Zcoordinate
+    -3.71,                    !- Vertex 2 Xcoordinate
+    13.3873,                  !- Vertex 2 Ycoordinate
+    3.007,                    !- Vertex 2 Zcoordinate
+    -3.71,                    !- Vertex 3 Xcoordinate
+    13.3873,                  !- Vertex 3 Ycoordinate
+    0.947,                    !- Vertex 3 Zcoordinate
+    -5.337,                   !- Vertex 4 Xcoordinate
+    13.3873,                  !- Vertex 4 Ycoordinate
+    0.947;                    !- Vertex 4 Zcoordinate
+
+FenestrationSurface:Detailed,
+    DpvWindow:1157217,        !- Name
+    Window,                   !- Surface Type
+    DefaultWindowConstruction,    !- Construction Name
+    DpvWall:1157029,          !- Building Surface Name
+    ,                         !- Outside Boundary Condition Object
+    autocalculate,            !- View Factor to Ground
+    ,                         !- Shading Control Name
+    DefaultWindowFrameAndDivider,    !- Frame and Divider Name
+    1,                        !- Multiplier
+    autocalculate,            !- Number of Vertices
+    4.4975,                   !- Vertex 1 Xcoordinate
+    4.5528,                   !- Vertex 1 Ycoordinate
+    0.947,                    !- Vertex 1 Zcoordinate
+    4.4975,                   !- Vertex 2 Xcoordinate
+    6.1798,                   !- Vertex 2 Ycoordinate
+    0.947,                    !- Vertex 2 Zcoordinate
+    4.4975,                   !- Vertex 3 Xcoordinate
+    6.1798,                   !- Vertex 3 Ycoordinate
+    3.007,                    !- Vertex 3 Zcoordinate
+    4.4975,                   !- Vertex 4 Xcoordinate
+    4.5528,                   !- Vertex 4 Ycoordinate
+    3.007;                    !- Vertex 4 Zcoordinate
+
+FenestrationSurface:Detailed,
+    DpvWindow:1157271,        !- Name
+    Window,                   !- Surface Type
+    DefaultWindowConstruction,    !- Construction Name
+    DpvWall:1157029,          !- Building Surface Name
+    ,                         !- Outside Boundary Condition Object
+    autocalculate,            !- View Factor to Ground
+    ,                         !- Shading Control Name
+    DefaultWindowFrameAndDivider,    !- Frame and Divider Name
+    1,                        !- Multiplier
+    autocalculate,            !- Number of Vertices
+    4.4975,                   !- Vertex 1 Xcoordinate
+    -2.2397,                  !- Vertex 1 Ycoordinate
+    0.947,                    !- Vertex 1 Zcoordinate
+    4.4975,                   !- Vertex 2 Xcoordinate
+    -0.6127,                  !- Vertex 2 Ycoordinate
+    0.947,                    !- Vertex 2 Zcoordinate
+    4.4975,                   !- Vertex 3 Xcoordinate
+    -0.6127,                  !- Vertex 3 Ycoordinate
+    3.007,                    !- Vertex 3 Zcoordinate
+    4.4975,                   !- Vertex 4 Xcoordinate
+    -2.2397,                  !- Vertex 4 Ycoordinate
+    3.007;                    !- Vertex 4 Zcoordinate
+
+FenestrationSurface:Detailed,
+    DpvWindow:1157297,        !- Name
+    Window,                   !- Surface Type
+    DefaultWindowConstruction,    !- Construction Name
+    DpvWall:1157028,          !- Building Surface Name
+    ,                         !- Outside Boundary Condition Object
+    autocalculate,            !- View Factor to Ground
+    ,                         !- Shading Control Name
+    DefaultWindowFrameAndDivider,    !- Frame and Divider Name
+    1,                        !- Multiplier
+    autocalculate,            !- Number of Vertices
+    -4.337,                   !- Vertex 1 Xcoordinate
+    -7.6127,                  !- Vertex 1 Ycoordinate
+    3.007,                    !- Vertex 1 Zcoordinate
+    -4.337,                   !- Vertex 2 Xcoordinate
+    -7.6127,                  !- Vertex 2 Ycoordinate
+    0.947,                    !- Vertex 2 Zcoordinate
+    -2.71,                    !- Vertex 3 Xcoordinate
+    -7.6127,                  !- Vertex 3 Ycoordinate
+    0.947,                    !- Vertex 3 Zcoordinate
+    -2.71,                    !- Vertex 4 Xcoordinate
+    -7.6127,                  !- Vertex 4 Ycoordinate
+    3.007;                    !- Vertex 4 Zcoordinate
+
+FenestrationSurface:Detailed,
+    DpvWindow:1157337,        !- Name
+    Window,                   !- Surface Type
+    DefaultWindowConstruction,    !- Construction Name
+    DpvWall:1157028,          !- Building Surface Name
+    ,                         !- Outside Boundary Condition Object
+    autocalculate,            !- View Factor to Ground
+    ,                         !- Shading Control Name
+    DefaultWindowFrameAndDivider,    !- Frame and Divider Name
+    1,                        !- Multiplier
+    autocalculate,            !- Number of Vertices
+    -17.295,                  !- Vertex 1 Xcoordinate
+    -7.6127,                  !- Vertex 1 Ycoordinate
+    0.947,                    !- Vertex 1 Zcoordinate
+    -15.668,                  !- Vertex 2 Xcoordinate
+    -7.6127,                  !- Vertex 2 Ycoordinate
+    0.947,                    !- Vertex 2 Zcoordinate
+    -15.668,                  !- Vertex 3 Xcoordinate
+    -7.6127,                  !- Vertex 3 Ycoordinate
+    3.007,                    !- Vertex 3 Zcoordinate
+    -17.295,                  !- Vertex 4 Xcoordinate
+    -7.6127,                  !- Vertex 4 Ycoordinate
+    3.007;                    !- Vertex 4 Zcoordinate
+
+FenestrationSurface:Detailed,
+    DpvWindow:1157367,        !- Name
+    Window,                   !- Surface Type
+    DefaultWindowConstruction,    !- Construction Name
+    DpvWall:1157027,          !- Building Surface Name
+    ,                         !- Outside Boundary Condition Object
+    autocalculate,            !- View Factor to Ground
+    ,                         !- Shading Control Name
+    DefaultWindowFrameAndDivider,    !- Frame and Divider Name
+    1,                        !- Multiplier
+    autocalculate,            !- Number of Vertices
+    -25.5025,                 !- Vertex 1 Xcoordinate
+    4.5528,                   !- Vertex 1 Ycoordinate
+    3.007,                    !- Vertex 1 Zcoordinate
+    -25.5025,                 !- Vertex 2 Xcoordinate
+    6.1798,                   !- Vertex 2 Ycoordinate
+    3.007,                    !- Vertex 2 Zcoordinate
+    -25.5025,                 !- Vertex 3 Xcoordinate
+    6.1798,                   !- Vertex 3 Ycoordinate
+    0.947,                    !- Vertex 3 Zcoordinate
+    -25.5025,                 !- Vertex 4 Xcoordinate
+    4.5528,                   !- Vertex 4 Ycoordinate
+    0.947;                    !- Vertex 4 Zcoordinate
+
+FenestrationSurface:Detailed,
+    DpvWindow:1157411,        !- Name
+    Window,                   !- Surface Type
+    DefaultWindowConstruction,    !- Construction Name
+    DpvWall:1157027,          !- Building Surface Name
+    ,                         !- Outside Boundary Condition Object
+    autocalculate,            !- View Factor to Ground
+    ,                         !- Shading Control Name
+    DefaultWindowFrameAndDivider,    !- Frame and Divider Name
+    1,                        !- Multiplier
+    autocalculate,            !- Number of Vertices
+    -25.5025,                 !- Vertex 1 Xcoordinate
+    -4.4052,                  !- Vertex 1 Ycoordinate
+    3.007,                    !- Vertex 1 Zcoordinate
+    -25.5025,                 !- Vertex 2 Xcoordinate
+    -2.7782,                  !- Vertex 2 Ycoordinate
+    3.007,                    !- Vertex 2 Zcoordinate
+    -25.5025,                 !- Vertex 3 Xcoordinate
+    -2.7782,                  !- Vertex 3 Ycoordinate
+    0.947,                    !- Vertex 3 Zcoordinate
+    -25.5025,                 !- Vertex 4 Xcoordinate
+    -4.4052,                  !- Vertex 4 Ycoordinate
+    0.947;                    !- Vertex 4 Zcoordinate
+
+WindowProperty:FrameAndDivider,
+    DefaultWindowFrameAndDivider,    !- Name
+    0.0,                      !- Frame Width
+    0.0,                      !- Frame Outside Projection
+    0.0,                      !- Frame Inside Projection
+    3.0,                      !- Frame Conductance
+    1.0,                      !- Ratio of FrameEdge Glass Conductance to CenterOfGlass Conductance
+    0.7,                      !- Frame Solar Absorptance
+    0.7,                      !- Frame Visible Absorptance
+    0.9,                      !- Frame Thermal Hemispherical Emissivity
+    DividedLite,              !- Divider Type
+    0.0,                      !- Divider Width
+    0.0,                      !- Number of Horizontal Dividers
+    0.0,                      !- Number of Vertical Dividers
+    0.0,                      !- Divider Outside Projection
+    0.0,                      !- Divider Inside Projection
+    3.0,                      !- Divider Conductance
+    ,                         !- Ratio of DividerEdge Glass Conductance to CenterOfGlass Conductance
+    ,                         !- Divider Solar Absorptance
+    ,                         !- Divider Visible Absorptance
+    ;                         !- Divider Thermal Hemispherical Emissivity
 
 Shading:Building:Detailed,
     DpvShadingSurface:1158832:0,    !- Name
@@ -1645,7 +1892,7 @@ ZoneControl:Thermostat,
 ThermostatSetpoint:DualSetpoint,
     Thermostat_DEFAULT_ZONE_Dual_SP_Control,    !- Name
     HVACTemplate_Always_20,    !- Heating Setpoint Temperature Schedule Name
-    HVACTemplate_Always_100;    !- Cooling Setpoint Temperature Schedule Name
+    HVACTemplate_Always_26;    !- Cooling Setpoint Temperature Schedule Name
 
 ZoneHVAC:IdealLoadsAirSystem,
     DEFAULT_ZONEZoneHVAC:IdealLoadsAirSystem,    !- Name

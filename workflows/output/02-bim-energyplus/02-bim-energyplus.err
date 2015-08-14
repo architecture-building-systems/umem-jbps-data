@@ -1,9 +1,9 @@
-Program Version,EnergyPlus, Version 8.2.0-e53a815bb2, YMD=2015.06.17 14:35,IDD_Version 8.2.0
+Program Version,EnergyPlus, Version 8.2.0-e53a815bb2, YMD=2015.07.23 13:35,IDD_Version 8.2.0
    ** Warning ** Version: in IDF="8.1" not the same as expected="8.2.0"
    ** Warning ** Timestep: Requested number (1) is less than the suggested minimum of 4.
    **   ~~~   ** Please see entry for Timestep in Input/Output Reference for discussion of considerations.
    ** Warning ** SetUpZoneGeometry: Entered Ceiling Height for Zone="DEFAULT_ZONE" significantly different from calculated Ceiling Height
-   **   ~~~   ** SetUpZoneGeometry: Entered Ceiling Height=6.42, Calculated Ceiling Height=7.06, entered height will be used in calculations.
+   **   ~~~   ** SetUpZoneGeometry: Entered Ceiling Height=6.38, Calculated Ceiling Height=6.97, entered height will be used in calculations.
    ** Warning ** CheckUsedConstructions: There are 2 nominally unused constructions in input.
    **   ~~~   ** Each Unused construction is shown.
    ************* Construction=_DPV AW1 1995 WSV III_REVERSED
@@ -44,4 +44,4 @@ Program Version,EnergyPlus, Version 8.2.0-e53a815bb2, YMD=2015.06.17 14:35,IDD_V
    *************
    ************* EnergyPlus Warmup Error Summary. During Warmup: 0 Warning; 0 Severe Errors.
    ************* EnergyPlus Sizing Error Summary. During Sizing: 0 Warning; 0 Severe Errors.
-   ************* EnergyPlus Completed Successfully-- 5 Warning; 0 Severe Errors; Elapsed Time=00hr 00min  7.00sec
+   ************* EnergyPlus Completed Successfully-- 5 Warning; 0 Severe Errors; Elapsed Time=00hr 00min  9.00sec
