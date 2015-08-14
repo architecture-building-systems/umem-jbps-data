@@ -43,7 +43,7 @@ and Arno Schlueter\textsuperscript{a}\\
 \maketitle
 
 \begin{abstract}
-This paper describes the simplified calibration process of the building and urban scale models of a campus of higher education buildings. The campus is modeled at both the building scale using the EnergyPlus simulation engine and at the urban scale using the CitySim engine. A co-simulation framework is used to execute simulations from both engines concurrently with an exchange of various information to leverage the various strengths of each. On-site weather and measured performance data is then compared to the output from three modeling scenarios: building-scale simulation, urban-scale simulation, and co-simulation of the engines. A partial calibration process is implemented to reconcile the simulations with the measured data of three targeted buildings. The results illustrate that {\color{red}insert results here}. A discussion is included of the challenges encountered with the urban scale calibration and the strengths and weaknesses of the developed process.
+This paper describes the simplified calibration process of the building and urban scale models of a campus of higher education buildings. The campus is modeled at both the building scale using the EnergyPlus simulation engine and at the urban scale using the CitySim engine. A co-simulation framework is used to execute simulations from both engines concurrently with an exchange of information to leverage the various strengths of each. On-site weather and measured performance data is then compared to the output from three modeling scenarios: building-scale simulation, urban-scale simulation, and co-simulation of the engines. A partial calibration process is implemented to reconcile the simulations with the measured data of three targeted buildings. The results illustrate that {\color{red}insert results here}. A discussion is included of the challenges encountered with the urban scale calibration and the strengths and weaknesses of the developed process.
 \end{abstract}
 
 %Taken out of the abstract: A significant amount of model input information was extracted for the creation of both models from a building information model (BIM) of the campus.
@@ -119,7 +119,7 @@ In order to address the deficiencies of the individual engines, the current effo
 
 \begin{figure}
 \centering
-\includegraphics[scale=1.0]{figures/UMEM_overview_new}
+\includegraphics[scale=0.7]{figures/UMEM_overview_new}
 \caption{EnergyPlus and CitySim coupling are part of the wider context. Each block in the diagram represents an environment, with the tool/engine name in italics (adapted from \citep{Dorer:2013vt})}
 \label{fig:UMEM}
 \end{figure}
@@ -149,7 +149,7 @@ floor types as well as window and door families. Wherever possible, the tool use
 
 \begin{figure}
 \centering
-\includegraphics[scale=1.0]{figures/UMEM_Workflow}
+\includegraphics[scale=0.7]{figures/UMEM_Workflow}
 \caption{Overview diagram of the coupling process including tools and outputs}
 \label{fig:OverallWorkflowProcess}
 \end{figure}
@@ -162,14 +162,16 @@ Since the model used by CitySim to simulate a building is more abstract than the
 
 \begin{figure}
 \centering
-\includegraphics[scale=1.0]{figures/UMEM_FMU_Overview}
+\includegraphics[scale=0.7]{figures/UMEM_FMU_Overview}
 \caption{Simulation information exchange between CitySim and EnergyPlus using FMI}
 \label{fig:FMUOverview}
 \end{figure}
 
 The process of augmenting the IDF file is automated with the EMS subroutines and FMU export objects. The script \emph{addfmutoidf.py}, written in the Python programming language, uses the \emph{parseidf} module to read in the IDF file and add the new IDF objects based on those found in the model.  This script reads in the list of surfaces defined in the IDF file and produces EMS scripts to aggregate and output the surface temperatures of the wall and the windows as well as any other output objects necessary.
 
-The FMU creation process is the basis for coupling the two models at each timestep in the simulation. Figure \ref{fig:FMUOverview} illustrates this process from both the EnergyPlus and CitySim perspective. The augmented IDF file is fed to the \emph{EnergyPlusToFMI} script \citep{Nouidui:2014bo}. Once configured, this script produces an FMU file based on the augmented IDF file and the weather file to be used as well as a DLL file implementing the Functional Mock-up Interface that can load the IDF file, locate EnergyPlus and run the simulation. Table \ref{FMUimports} and \ref{FMUexports} outline the variables exchanged between EnergyPlus and CitySim through the FMI. We used the \emph{fmilib} library from the JModelica project to test the FMU produced \citep{Anonymous:ZZTfF80-}. We altered one of the sample programs (\emph{fmi\_import\_cs\_test.c}) to load the FMU, run it and print out the values exported from EnergyPlus. This code was then used as a guide to extending the CitySim solver to load FMUs for co-simulation.
+The FMU creation process is the basis for coupling the two models at each timestep in the simulation. Figure \ref{fig:FMUOverview} illustrates this process from both the EnergyPlus and CitySim perspective. The augmented IDF file is fed to the \emph{EnergyPlusToFMI} script \citep{Nouidui:2014bo}. Once configured, this script produces an FMU file based on the augmented IDF file and the weather file to be used as well as a DLL file implementing the Functional Mock-up Interface that can load the IDF file, locate EnergyPlus and run the simulation. Table \ref{FMUimports} and \ref{FMUexports} outline the variables exchanged between EnergyPlus and CitySim through the FMI. 
+
+% We used the \emph{fmilib} library from the JModelica project to test the FMU produced \citep{Anonymous:ZZTfF80-}. We altered one of the sample programs (\emph{fmi\_import\_cs\_test.c}) to load the FMU, run it and print out the values exported from EnergyPlus. This code was then used as a guide to extending the CitySim solver to load FMUs for co-simulation.
 
 \subsection{Coupled variables}
 
@@ -186,13 +188,13 @@ On an hourly basis, CitySim performs a heating and cooling needs prediction step
  & Diffuse Solar & Diffuse horizontal irradiance in W/m$^2$ \\
  & Direct Solar & Beam normal irradiance in W/m$^2$ \\
  & Wind Speed & The outdoor wind speed in m/s \\
- & Wind Direction & The wind direction in degrees (N=0, E=90, S=180, W=270) \\
+ & Wind Direction & The wind direction in degrees\\&&  (N=0, E=90, S=180, W=270) \\
  \hline
- Long Wave Radiation & Environmental Radiant Temp. & Calculated $T_{env}$ from the sky, ground, and surrounding surfaces \\
- & Environmental Radiant Heat & Calculated $h_{env}$ from the sky, ground, and surrounding surfaces \\
+ Long Wave Radiation & Environmental Radiant Temp. & Calculated $T_{env}$ from the sky,\\&& ground, and surrounding surfaces \\
+ & Environmental Radiant Heat & Calculated $h_{env}$ from the sky,\\&& ground, and surrounding surfaces \\
  & Gain Coefficient \\
  \hline
-Zone & Occupation & Fraction of the maximum occupation (0.0-1.0) overrides the EnergyPlus\\&& occupation schedule with the CitySim stochastic schedule. \\
+Zone & Occupation & Fraction of the maximum occupation\\&& (0.0-1.0) overrides the EnergyPlus occupation schedule\\&&  with the CitySim stochastic schedule. \\
 \botrule
 \end{tabular}}
 \label{FMUimports}
@@ -205,7 +207,8 @@ Zone & Occupation & Fraction of the maximum occupation (0.0-1.0) overrides the E
 \colrule
 Wall, Roof & Outside Surface Temperature & The temperature on the outside of the surface in $^{\circ}\mathrm{C}$ \\    
     \hline
-Wall & Average Outside Surface Temperature & The (weighted) average temperature of the surface on the outside in $^{\circ}\mathrm{C}$. \\
+Wall & Average Outside Surface Temperature & The (weighted) average temperature of \\
+& & the surface on the outside in $^{\circ}\mathrm{C}$. \\
     \hline
 Zone & Total Heating Energy & The heating energy in Joules used in this timestep. \\
 & Total Cooling Energy & The cooling energy in Joules used in this timestep. \\
@@ -228,28 +231,68 @@ A novel aspect of this analysis is the comparison of actual measured performance
  
 \section{Implementation}\label{Implementation}
 \subsection{Campus case study}
-{\color{red}This section will describe the ETH Hoenggerberg case study}
+% {\color{red}This section will describe the ETH Hoenggerberg case study}
+The simulation and calibration process is implemented on a campus case study located in Z\"urich, Switzerland. The campus includes 32 higher education buildings with spaces allocated to laboratories, office space, lecture halls, cafeterias, data centers and other types of similar spaces. The campus has a centralized energy management system (EMS) that contains 807 energy and water measurement points from heating, cooling, electricity, city gas, domestic hot water, grey water, and general water consumption. Figure \ref{fig:pointgraph} illustrates the breakdown of these measurement system data points amongst the campus buildings.
 
-
-\subsection{Model development}
-{\color{red}This section will describe the development of the Revit, CitySim and EnergyPlus models}
 \begin{figure}
 \centering
-\includegraphics[scale=0.3]{figures/campuscitysim}
+\includegraphics[scale=0.7]{figures/pointbreakdown_anon}
+\caption{Available performance measurement points}
+\label{fig:pointgraph}
+\end{figure}
+
+The focus of the co-simulation process is that the performance of a targeted building is evaluated through solo and coupled methods. Four buildings out of 32 are chosen in this case study as targets due to amount and quality of measured data available from the EMS. These buildings are indicated on a campus map shown in Figure \ref{fig:campusmap} with the targeted buildings shaded red.
+
+% The coupling process outlined is applicable with regards to a targeted building that is surrounded by an adjacent array of buildings. 
+% {\color{red}Insert the campus map illustrating the targeted buildings.}
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.5]{figures/ETH_Hoenngerbergcamp_targetedbuildings}
+\caption{ETH Hoenggerberg campus map with buildings targeted in this case study shaded red}
+\label{fig:campusmap}
+\end{figure}
+
+\subsection{Model development}
+In order to perform a co-simulation of the targeted buildings, initially a CitySim model of the campus is developed as seen in Figure \ref{fig:campuscitysim}. An existing EnergyPlus model is used for the HPZ building and simplified single-zone EnergyPlus models are extracted from the CitySim geometry for the other three targeted buildings.
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.2]{figures/campuscitysim}
 \caption{Campus modeled in CitySim}
 \label{fig:campuscitysim}
 \end{figure}
 
 \subsection{Measured data collection and processing}
+Energy data from each of the targeted buildings is collected and analyzed in the context of the simplified calibration procedures. The measured datasets are screened and aggregated into typical usage profiles to be used for the lighting, plug-loads, and HVAC equipment availability schedules and power densities. Figures \ref{fig:hpz_profiles}-\ref{fig:hit_profiles} illustrate the aggregation examples of the heating energy from the HPZ building and the electrical energy from HPK, HPI, and HIT.
 
 \begin{figure}
 \centering
-\includegraphics[scale=1.0]{figures/pointbreakdown_anon}
-\caption{Available performance measurement points}
-\label{fig:pointgraph}
+\includegraphics[scale=0.45]{figures/HPZ_combinedclusterandcal_4}
+\caption{HPZ Heating Energy Typical Profiles}
+\label{fig:hpz_profiles}
 \end{figure}
 
-{\color{red}Insert the campus map illustrating the targeted buildings.}
+\begin{figure}
+\centering
+\includegraphics[scale=0.45]{figures/HPK_combinedclusterandcal_4}
+\caption{HPK Electrical Energy Typical Profiles}
+\label{fig:hpk_profiles}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.45]{figures/HPI_combinedclusterandcal_4}
+\caption{HPI Electrical Energy Typical Profiles}
+\label{fig:hpi_profiles}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.45]{figures/HIT_combinedclusterandcal_4}
+\caption{HIT Electrical Energy Typical Profiles}
+\label{fig:hit_profiles}
+\end{figure}
 
 
 \section{Results}
