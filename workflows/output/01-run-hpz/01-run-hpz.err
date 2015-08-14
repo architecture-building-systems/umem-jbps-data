@@ -1,315 +1,13 @@
-Program Version,EnergyPlus, Version 8.2.0-e53a815bb2, YMD=2015.06.17 14:35,IDD_Version 8.2.0
-   ** Warning ** Output:PreprocessorMessage="CustomWarningGenerator" has the following Warning condition:
-   **   ~~~   ** Fix constant coefficients macro. Discuss with Carina.
+Program Version,EnergyPlus, Version 8.2.0-e53a815bb2, YMD=2015.07.24 14:10,IDD_Version 8.2.0
+   ** Warning ** Version: in IDF="8.1" not the same as expected="8.2.0"
    ** Warning ** Timestep: Requested number (1) is less than the suggested minimum of 4.
    **   ~~~   ** Please see entry for Timestep in Input/Output Reference for discussion of considerations.
-   ** Warning ** Site:GroundTemperature:BuildingSurface: Some values fall outside the range of 15-25C.
-   **   ~~~   ** These values may be inappropriate.  Please consult the Input Output Reference for more details.
-   ** Warning ** GetSurfaceData: Entered Zone Floor Areas differ from calculated Zone Floor Area(s).
-   **   ~~~   ** ...use Output:Diagnostics,DisplayExtraWarnings; to show more details on individual zones.
-   ** Warning ** GetSurfaceData: There are 8 coincident/collinear vertices; These have been deleted unless the deletion would bring the number of surface sides < 3.
-   **   ~~~   ** For explicit details on each problem surface, use Output:Diagnostics,DisplayExtraWarnings;
-   ************* Note that the following warning(s) may/will occur if you have not enclosed your zone completely.
-   ** Warning ** Entered Zone Volumes differ from calculated zone volume(s).
-   **   ~~~   ** ...use Output:Diagnostics,DisplayExtraWarnings; to show more details on individual zones.
-   ** Warning ** CheckUsedConstructions: There are 4 nominally unused constructions in input.
-   **   ~~~   ** For explicit details on each unused construction, use Output:Diagnostics,DisplayExtraWarnings;
-   ** Severe  ** InitConductionTransferFunctions: Found Material that is too thin and/or too highly conductive, material name = STEEL_WHITE
-   **   ~~~   ** High conductivity Material layers are not well supported for internal source constructions, material conductivity = 50.000 [W/m-K]
-   **   ~~~   ** Material thermal diffusivity = 1.425E-005 [m2/s]
-   **   ~~~   ** Material with this thermal diffusivity should have thickness > 0.39223 [m]
-   **   ~~~   ** Material may be too thin to be modeled well, thickness = 1.50000E-003 [m]
-   **   ~~~   ** Material with this thermal diffusivity should have thickness > 3.00000E-003 [m]
-   ** Warning ** HVACControllers: GetControllerInput: Controller:WaterCoil="CONTROLLER_WATERHEATINGCOIL_ABX_E_NE". 
-   **   ~~~   **  ..Sensor node not found on water coil air outlet node.
-   **   ~~~   **  ..The sensor node may have been placed on a node downstream of the coil or on an airloop outlet node.
-   ** Warning ** HVACControllers: GetControllerInput: Controller:WaterCoil="CONTROLLER_WATERCOOLINGCOIL_ABX_E_NE". 
-   **   ~~~   **  ..Sensor node not found on water coil air outlet node.
-   **   ~~~   **  ..The sensor node may have been placed on a node downstream of the coil or on an airloop outlet node.
-   ** Warning ** HVACControllers: GetControllerInput: Controller:WaterCoil="CONTROLLER_WATERHEATINGCOIL_ABX_E_NW". 
-   **   ~~~   **  ..Sensor node not found on water coil air outlet node.
-   **   ~~~   **  ..The sensor node may have been placed on a node downstream of the coil or on an airloop outlet node.
-   ** Warning ** HVACControllers: GetControllerInput: Controller:WaterCoil="CONTROLLER_WATERCOOLINGCOIL_ABX_E_NW". 
-   **   ~~~   **  ..Sensor node not found on water coil air outlet node.
-   **   ~~~   **  ..The sensor node may have been placed on a node downstream of the coil or on an airloop outlet node.
-   ** Warning ** HVACControllers: GetControllerInput: Controller:WaterCoil="CONTROLLER_WATERHEATINGCOIL_ABX_E_SE". 
-   **   ~~~   **  ..Sensor node not found on water coil air outlet node.
-   **   ~~~   **  ..The sensor node may have been placed on a node downstream of the coil or on an airloop outlet node.
-   ** Warning ** HVACControllers: GetControllerInput: Controller:WaterCoil="CONTROLLER_WATERCOOLINGCOIL_ABX_E_SE". 
-   **   ~~~   **  ..Sensor node not found on water coil air outlet node.
-   **   ~~~   **  ..The sensor node may have been placed on a node downstream of the coil or on an airloop outlet node.
-   ** Warning ** HVACControllers: GetControllerInput: Controller:WaterCoil="CONTROLLER_WATERHEATINGCOIL_ABX_E_SW". 
-   **   ~~~   **  ..Sensor node not found on water coil air outlet node.
-   **   ~~~   **  ..The sensor node may have been placed on a node downstream of the coil or on an airloop outlet node.
-   ** Warning ** HVACControllers: GetControllerInput: Controller:WaterCoil="CONTROLLER_WATERCOOLINGCOIL_ABX_E_SW". 
-   **   ~~~   **  ..Sensor node not found on water coil air outlet node.
-   **   ~~~   **  ..The sensor node may have been placed on a node downstream of the coil or on an airloop outlet node.
-   ** Warning ** HVACControllers: GetControllerInput: Controller:WaterCoil="CONTROLLER_WATERHEATINGCOIL_ABX_E_W". 
-   **   ~~~   **  ..Sensor node not found on water coil air outlet node.
-   **   ~~~   **  ..The sensor node may have been placed on a node downstream of the coil or on an airloop outlet node.
-   ** Warning ** HVACControllers: GetControllerInput: Controller:WaterCoil="CONTROLLER_WATERCOOLINGCOIL_ABX_E_W". 
-   **   ~~~   **  ..Sensor node not found on water coil air outlet node.
-   **   ~~~   **  ..The sensor node may have been placed on a node downstream of the coil or on an airloop outlet node.
-   ** Warning ** HVACControllers: GetControllerInput: Controller:WaterCoil="CONTROLLER_WATERHEATINGCOIL_ABX_F_E". 
-   **   ~~~   **  ..Sensor node not found on water coil air outlet node.
-   **   ~~~   **  ..The sensor node may have been placed on a node downstream of the coil or on an airloop outlet node.
-   ** Warning ** HVACControllers: GetControllerInput: Controller:WaterCoil="CONTROLLER_WATERCOOLINGCOIL_ABX_F_E". 
-   **   ~~~   **  ..Sensor node not found on water coil air outlet node.
-   **   ~~~   **  ..The sensor node may have been placed on a node downstream of the coil or on an airloop outlet node.
-   ** Warning ** HVACControllers: GetControllerInput: Controller:WaterCoil="CONTROLLER_WATERHEATINGCOIL_ABX_F_NE". 
-   **   ~~~   **  ..Sensor node not found on water coil air outlet node.
-   **   ~~~   **  ..The sensor node may have been placed on a node downstream of the coil or on an airloop outlet node.
-   ** Warning ** HVACControllers: GetControllerInput: Controller:WaterCoil="CONTROLLER_WATERCOOLINGCOIL_ABX_F_NE". 
-   **   ~~~   **  ..Sensor node not found on water coil air outlet node.
-   **   ~~~   **  ..The sensor node may have been placed on a node downstream of the coil or on an airloop outlet node.
-   ** Warning ** HVACControllers: GetControllerInput: Controller:WaterCoil="CONTROLLER_WATERHEATINGCOIL_ABX_F_NI". 
-   **   ~~~   **  ..Sensor node not found on water coil air outlet node.
-   **   ~~~   **  ..The sensor node may have been placed on a node downstream of the coil or on an airloop outlet node.
-   ** Warning ** HVACControllers: GetControllerInput: Controller:WaterCoil="CONTROLLER_WATERCOOLINGCOIL_ABX_F_NI". 
-   **   ~~~   **  ..Sensor node not found on water coil air outlet node.
-   **   ~~~   **  ..The sensor node may have been placed on a node downstream of the coil or on an airloop outlet node.
-   ** Warning ** HVACControllers: GetControllerInput: Controller:WaterCoil="CONTROLLER_WATERHEATINGCOIL_ABX_F_SE". 
-   **   ~~~   **  ..Sensor node not found on water coil air outlet node.
-   **   ~~~   **  ..The sensor node may have been placed on a node downstream of the coil or on an airloop outlet node.
-   ** Warning ** HVACControllers: GetControllerInput: Controller:WaterCoil="CONTROLLER_WATERCOOLINGCOIL_ABX_F_SE". 
-   **   ~~~   **  ..Sensor node not found on water coil air outlet node.
-   **   ~~~   **  ..The sensor node may have been placed on a node downstream of the coil or on an airloop outlet node.
-   ** Warning ** HVACControllers: GetControllerInput: Controller:WaterCoil="CONTROLLER_WATERHEATINGCOIL_ABX_F_SI". 
-   **   ~~~   **  ..Sensor node not found on water coil air outlet node.
-   **   ~~~   **  ..The sensor node may have been placed on a node downstream of the coil or on an airloop outlet node.
-   ** Warning ** HVACControllers: GetControllerInput: Controller:WaterCoil="CONTROLLER_WATERCOOLINGCOIL_ABX_F_SI". 
-   **   ~~~   **  ..Sensor node not found on water coil air outlet node.
-   **   ~~~   **  ..The sensor node may have been placed on a node downstream of the coil or on an airloop outlet node.
-   ** Warning ** HVACControllers: GetControllerInput: Controller:WaterCoil="CONTROLLER_WATERHEATINGCOIL_ABX_G_E". 
-   **   ~~~   **  ..Sensor node not found on water coil air outlet node.
-   **   ~~~   **  ..The sensor node may have been placed on a node downstream of the coil or on an airloop outlet node.
-   ** Warning ** HVACControllers: GetControllerInput: Controller:WaterCoil="CONTROLLER_WATERCOOLINGCOIL_ABX_G_E". 
-   **   ~~~   **  ..Sensor node not found on water coil air outlet node.
-   **   ~~~   **  ..The sensor node may have been placed on a node downstream of the coil or on an airloop outlet node.
-   ** Warning ** HVACControllers: GetControllerInput: Controller:WaterCoil="CONTROLLER_WATERHEATINGCOIL_ABX_G_N". 
-   **   ~~~   **  ..Sensor node not found on water coil air outlet node.
-   **   ~~~   **  ..The sensor node may have been placed on a node downstream of the coil or on an airloop outlet node.
-   ** Warning ** HVACControllers: GetControllerInput: Controller:WaterCoil="CONTROLLER_WATERCOOLINGCOIL_ABX_G_N". 
-   **   ~~~   **  ..Sensor node not found on water coil air outlet node.
-   **   ~~~   **  ..The sensor node may have been placed on a node downstream of the coil or on an airloop outlet node.
-   ** Warning ** HVACControllers: GetControllerInput: Controller:WaterCoil="CONTROLLER_WATERHEATINGCOIL_ABX_G_NE". 
-   **   ~~~   **  ..Sensor node not found on water coil air outlet node.
-   **   ~~~   **  ..The sensor node may have been placed on a node downstream of the coil or on an airloop outlet node.
-   ** Warning ** HVACControllers: GetControllerInput: Controller:WaterCoil="CONTROLLER_WATERCOOLINGCOIL_ABX_G_NE". 
-   **   ~~~   **  ..Sensor node not found on water coil air outlet node.
-   **   ~~~   **  ..The sensor node may have been placed on a node downstream of the coil or on an airloop outlet node.
-   ** Warning ** HVACControllers: GetControllerInput: Controller:WaterCoil="CONTROLLER_WATERHEATINGCOIL_ABX_G_NW". 
-   **   ~~~   **  ..Sensor node not found on water coil air outlet node.
-   **   ~~~   **  ..The sensor node may have been placed on a node downstream of the coil or on an airloop outlet node.
-   ** Warning ** HVACControllers: GetControllerInput: Controller:WaterCoil="CONTROLLER_WATERCOOLINGCOIL_ABX_G_NW". 
-   **   ~~~   **  ..Sensor node not found on water coil air outlet node.
-   **   ~~~   **  ..The sensor node may have been placed on a node downstream of the coil or on an airloop outlet node.
-   ** Warning ** HVACControllers: GetControllerInput: Controller:WaterCoil="CONTROLLER_WATERHEATINGCOIL_ABX_G_S". 
-   **   ~~~   **  ..Sensor node not found on water coil air outlet node.
-   **   ~~~   **  ..The sensor node may have been placed on a node downstream of the coil or on an airloop outlet node.
-   ** Warning ** HVACControllers: GetControllerInput: Controller:WaterCoil="CONTROLLER_WATERCOOLINGCOIL_ABX_G_S". 
-   **   ~~~   **  ..Sensor node not found on water coil air outlet node.
-   **   ~~~   **  ..The sensor node may have been placed on a node downstream of the coil or on an airloop outlet node.
-   ** Warning ** HVACControllers: GetControllerInput: Controller:WaterCoil="CONTROLLER_WATERHEATINGCOIL_ABX_G_SE". 
-   **   ~~~   **  ..Sensor node not found on water coil air outlet node.
-   **   ~~~   **  ..The sensor node may have been placed on a node downstream of the coil or on an airloop outlet node.
-   ** Warning ** HVACControllers: GetControllerInput: Controller:WaterCoil="CONTROLLER_WATERCOOLINGCOIL_ABX_G_SE". 
-   **   ~~~   **  ..Sensor node not found on water coil air outlet node.
-   **   ~~~   **  ..The sensor node may have been placed on a node downstream of the coil or on an airloop outlet node.
-   ** Warning ** HVACControllers: GetControllerInput: Controller:WaterCoil="CONTROLLER_WATERHEATINGCOIL_ABX_G_SW". 
-   **   ~~~   **  ..Sensor node not found on water coil air outlet node.
-   **   ~~~   **  ..The sensor node may have been placed on a node downstream of the coil or on an airloop outlet node.
-   ** Warning ** HVACControllers: GetControllerInput: Controller:WaterCoil="CONTROLLER_WATERCOOLINGCOIL_ABX_G_SW". 
-   **   ~~~   **  ..Sensor node not found on water coil air outlet node.
-   **   ~~~   **  ..The sensor node may have been placed on a node downstream of the coil or on an airloop outlet node.
-   ** Warning ** HVACControllers: GetControllerInput: Controller:WaterCoil="CONTROLLER_WATERHEATINGCOIL_ABX_G_W". 
-   **   ~~~   **  ..Sensor node not found on water coil air outlet node.
-   **   ~~~   **  ..The sensor node may have been placed on a node downstream of the coil or on an airloop outlet node.
-   ** Warning ** HVACControllers: GetControllerInput: Controller:WaterCoil="CONTROLLER_WATERCOOLINGCOIL_ABX_G_W". 
-   **   ~~~   **  ..Sensor node not found on water coil air outlet node.
-   **   ~~~   **  ..The sensor node may have been placed on a node downstream of the coil or on an airloop outlet node.
-   ** Warning ** In calculating the design coil UA for Coil:Cooling:Water WATERCOOLINGCOIL_ABX_E_NE
-   **   ~~~   ** the apparatus dew-point is below the coil design inlet water temperature;
-   **   ~~~   ** the coil outlet design conditions will be changed to correct the problem.
-   **   ~~~   ** The initial design conditions are: Tair,in = 37.0000
-   **   ~~~   **                                    Wair,in = 1.580000E-002
-   **   ~~~   **                                    Twater,in = 18.0000
-   **   ~~~   **                                    Tair,out = 20.0000
-   **   ~~~   **                                    Wair,out = 1.340000E-002
-   **   ~~~   ** The revised design conditions are: Tair,out = 19.5969
-   **   ~~~   **                                    Wair,out = 1.356357E-002
-   ** Warning ** In calculating the design coil UA for Coil:Cooling:Water WATERCOOLINGCOIL_ABX_E_NW
-   **   ~~~   ** the apparatus dew-point is below the coil design inlet water temperature;
-   **   ~~~   ** the coil outlet design conditions will be changed to correct the problem.
-   **   ~~~   ** The initial design conditions are: Tair,in = 37.0000
-   **   ~~~   **                                    Wair,in = 1.580000E-002
-   **   ~~~   **                                    Twater,in = 18.0000
-   **   ~~~   **                                    Tair,out = 20.0000
-   **   ~~~   **                                    Wair,out = 1.340000E-002
-   **   ~~~   ** The revised design conditions are: Tair,out = 19.5969
-   **   ~~~   **                                    Wair,out = 1.356357E-002
-   ** Warning ** In calculating the design coil UA for Coil:Cooling:Water WATERCOOLINGCOIL_ABX_E_SE
-   **   ~~~   ** the apparatus dew-point is below the coil design inlet water temperature;
-   **   ~~~   ** the coil outlet design conditions will be changed to correct the problem.
-   **   ~~~   ** The initial design conditions are: Tair,in = 37.0000
-   **   ~~~   **                                    Wair,in = 1.580000E-002
-   **   ~~~   **                                    Twater,in = 18.0000
-   **   ~~~   **                                    Tair,out = 20.0000
-   **   ~~~   **                                    Wair,out = 1.340000E-002
-   **   ~~~   ** The revised design conditions are: Tair,out = 19.5969
-   **   ~~~   **                                    Wair,out = 1.356357E-002
-   ** Warning ** In calculating the design coil UA for Coil:Cooling:Water WATERCOOLINGCOIL_ABX_E_SW
-   **   ~~~   ** the apparatus dew-point is below the coil design inlet water temperature;
-   **   ~~~   ** the coil outlet design conditions will be changed to correct the problem.
-   **   ~~~   ** The initial design conditions are: Tair,in = 37.0000
-   **   ~~~   **                                    Wair,in = 1.580000E-002
-   **   ~~~   **                                    Twater,in = 18.0000
-   **   ~~~   **                                    Tair,out = 20.0000
-   **   ~~~   **                                    Wair,out = 1.340000E-002
-   **   ~~~   ** The revised design conditions are: Tair,out = 19.5969
-   **   ~~~   **                                    Wair,out = 1.356357E-002
-   ** Warning ** In calculating the design coil UA for Coil:Cooling:Water WATERCOOLINGCOIL_ABX_E_W
-   **   ~~~   ** the apparatus dew-point is below the coil design inlet water temperature;
-   **   ~~~   ** the coil outlet design conditions will be changed to correct the problem.
-   **   ~~~   ** The initial design conditions are: Tair,in = 37.0000
-   **   ~~~   **                                    Wair,in = 1.580000E-002
-   **   ~~~   **                                    Twater,in = 18.0000
-   **   ~~~   **                                    Tair,out = 20.0000
-   **   ~~~   **                                    Wair,out = 1.340000E-002
-   **   ~~~   ** The revised design conditions are: Tair,out = 19.5969
-   **   ~~~   **                                    Wair,out = 1.356357E-002
-   ** Warning ** In calculating the design coil UA for Coil:Cooling:Water WATERCOOLINGCOIL_ABX_F_E
-   **   ~~~   ** the apparatus dew-point is below the coil design inlet water temperature;
-   **   ~~~   ** the coil outlet design conditions will be changed to correct the problem.
-   **   ~~~   ** The initial design conditions are: Tair,in = 37.0000
-   **   ~~~   **                                    Wair,in = 1.580000E-002
-   **   ~~~   **                                    Twater,in = 18.0000
-   **   ~~~   **                                    Tair,out = 20.0000
-   **   ~~~   **                                    Wair,out = 1.340000E-002
-   **   ~~~   ** The revised design conditions are: Tair,out = 19.5969
-   **   ~~~   **                                    Wair,out = 1.356357E-002
-   ** Warning ** In calculating the design coil UA for Coil:Cooling:Water WATERCOOLINGCOIL_ABX_F_NE
-   **   ~~~   ** the apparatus dew-point is below the coil design inlet water temperature;
-   **   ~~~   ** the coil outlet design conditions will be changed to correct the problem.
-   **   ~~~   ** The initial design conditions are: Tair,in = 37.0000
-   **   ~~~   **                                    Wair,in = 1.580000E-002
-   **   ~~~   **                                    Twater,in = 18.0000
-   **   ~~~   **                                    Tair,out = 20.0000
-   **   ~~~   **                                    Wair,out = 1.340000E-002
-   **   ~~~   ** The revised design conditions are: Tair,out = 19.5969
-   **   ~~~   **                                    Wair,out = 1.356357E-002
-   ** Warning ** In calculating the design coil UA for Coil:Cooling:Water WATERCOOLINGCOIL_ABX_F_NI
-   **   ~~~   ** the apparatus dew-point is below the coil design inlet water temperature;
-   **   ~~~   ** the coil outlet design conditions will be changed to correct the problem.
-   **   ~~~   ** The initial design conditions are: Tair,in = 37.0000
-   **   ~~~   **                                    Wair,in = 1.580000E-002
-   **   ~~~   **                                    Twater,in = 18.0000
-   **   ~~~   **                                    Tair,out = 20.0000
-   **   ~~~   **                                    Wair,out = 1.340000E-002
-   **   ~~~   ** The revised design conditions are: Tair,out = 19.5969
-   **   ~~~   **                                    Wair,out = 1.356357E-002
-   ** Warning ** In calculating the design coil UA for Coil:Cooling:Water WATERCOOLINGCOIL_ABX_F_SE
-   **   ~~~   ** the apparatus dew-point is below the coil design inlet water temperature;
-   **   ~~~   ** the coil outlet design conditions will be changed to correct the problem.
-   **   ~~~   ** The initial design conditions are: Tair,in = 37.0000
-   **   ~~~   **                                    Wair,in = 1.580000E-002
-   **   ~~~   **                                    Twater,in = 18.0000
-   **   ~~~   **                                    Tair,out = 20.0000
-   **   ~~~   **                                    Wair,out = 1.340000E-002
-   **   ~~~   ** The revised design conditions are: Tair,out = 19.5969
-   **   ~~~   **                                    Wair,out = 1.356357E-002
-   ** Warning ** In calculating the design coil UA for Coil:Cooling:Water WATERCOOLINGCOIL_ABX_F_SI
-   **   ~~~   ** the apparatus dew-point is below the coil design inlet water temperature;
-   **   ~~~   ** the coil outlet design conditions will be changed to correct the problem.
-   **   ~~~   ** The initial design conditions are: Tair,in = 37.0000
-   **   ~~~   **                                    Wair,in = 1.580000E-002
-   **   ~~~   **                                    Twater,in = 18.0000
-   **   ~~~   **                                    Tair,out = 20.0000
-   **   ~~~   **                                    Wair,out = 1.340000E-002
-   **   ~~~   ** The revised design conditions are: Tair,out = 19.5969
-   **   ~~~   **                                    Wair,out = 1.356357E-002
-   ** Warning ** In calculating the design coil UA for Coil:Cooling:Water WATERCOOLINGCOIL_ABX_G_E
-   **   ~~~   ** the apparatus dew-point is below the coil design inlet water temperature;
-   **   ~~~   ** the coil outlet design conditions will be changed to correct the problem.
-   **   ~~~   ** The initial design conditions are: Tair,in = 37.0000
-   **   ~~~   **                                    Wair,in = 1.580000E-002
-   **   ~~~   **                                    Twater,in = 18.0000
-   **   ~~~   **                                    Tair,out = 20.0000
-   **   ~~~   **                                    Wair,out = 1.340000E-002
-   **   ~~~   ** The revised design conditions are: Tair,out = 19.5969
-   **   ~~~   **                                    Wair,out = 1.356357E-002
-   ** Warning ** In calculating the design coil UA for Coil:Cooling:Water WATERCOOLINGCOIL_ABX_G_N
-   **   ~~~   ** the apparatus dew-point is below the coil design inlet water temperature;
-   **   ~~~   ** the coil outlet design conditions will be changed to correct the problem.
-   **   ~~~   ** The initial design conditions are: Tair,in = 37.0000
-   **   ~~~   **                                    Wair,in = 1.580000E-002
-   **   ~~~   **                                    Twater,in = 18.0000
-   **   ~~~   **                                    Tair,out = 20.0000
-   **   ~~~   **                                    Wair,out = 1.340000E-002
-   **   ~~~   ** The revised design conditions are: Tair,out = 19.5969
-   **   ~~~   **                                    Wair,out = 1.356357E-002
-   ** Warning ** In calculating the design coil UA for Coil:Cooling:Water WATERCOOLINGCOIL_ABX_G_NE
-   **   ~~~   ** the apparatus dew-point is below the coil design inlet water temperature;
-   **   ~~~   ** the coil outlet design conditions will be changed to correct the problem.
-   **   ~~~   ** The initial design conditions are: Tair,in = 37.0000
-   **   ~~~   **                                    Wair,in = 1.580000E-002
-   **   ~~~   **                                    Twater,in = 18.0000
-   **   ~~~   **                                    Tair,out = 20.0000
-   **   ~~~   **                                    Wair,out = 1.340000E-002
-   **   ~~~   ** The revised design conditions are: Tair,out = 19.5969
-   **   ~~~   **                                    Wair,out = 1.356357E-002
-   ** Warning ** In calculating the design coil UA for Coil:Cooling:Water WATERCOOLINGCOIL_ABX_G_NW
-   **   ~~~   ** the apparatus dew-point is below the coil design inlet water temperature;
-   **   ~~~   ** the coil outlet design conditions will be changed to correct the problem.
-   **   ~~~   ** The initial design conditions are: Tair,in = 37.0000
-   **   ~~~   **                                    Wair,in = 1.580000E-002
-   **   ~~~   **                                    Twater,in = 18.0000
-   **   ~~~   **                                    Tair,out = 20.0000
-   **   ~~~   **                                    Wair,out = 1.340000E-002
-   **   ~~~   ** The revised design conditions are: Tair,out = 19.5969
-   **   ~~~   **                                    Wair,out = 1.356357E-002
-   ** Warning ** In calculating the design coil UA for Coil:Cooling:Water WATERCOOLINGCOIL_ABX_G_S
-   **   ~~~   ** the apparatus dew-point is below the coil design inlet water temperature;
-   **   ~~~   ** the coil outlet design conditions will be changed to correct the problem.
-   **   ~~~   ** The initial design conditions are: Tair,in = 37.0000
-   **   ~~~   **                                    Wair,in = 1.580000E-002
-   **   ~~~   **                                    Twater,in = 18.0000
-   **   ~~~   **                                    Tair,out = 20.0000
-   **   ~~~   **                                    Wair,out = 1.340000E-002
-   **   ~~~   ** The revised design conditions are: Tair,out = 19.5969
-   **   ~~~   **                                    Wair,out = 1.356357E-002
-   ** Warning ** In calculating the design coil UA for Coil:Cooling:Water WATERCOOLINGCOIL_ABX_G_SE
-   **   ~~~   ** the apparatus dew-point is below the coil design inlet water temperature;
-   **   ~~~   ** the coil outlet design conditions will be changed to correct the problem.
-   **   ~~~   ** The initial design conditions are: Tair,in = 37.0000
-   **   ~~~   **                                    Wair,in = 1.580000E-002
-   **   ~~~   **                                    Twater,in = 18.0000
-   **   ~~~   **                                    Tair,out = 20.0000
-   **   ~~~   **                                    Wair,out = 1.340000E-002
-   **   ~~~   ** The revised design conditions are: Tair,out = 19.5969
-   **   ~~~   **                                    Wair,out = 1.356357E-002
-   ** Warning ** In calculating the design coil UA for Coil:Cooling:Water WATERCOOLINGCOIL_ABX_G_SW
-   **   ~~~   ** the apparatus dew-point is below the coil design inlet water temperature;
-   **   ~~~   ** the coil outlet design conditions will be changed to correct the problem.
-   **   ~~~   ** The initial design conditions are: Tair,in = 37.0000
-   **   ~~~   **                                    Wair,in = 1.580000E-002
-   **   ~~~   **                                    Twater,in = 18.0000
-   **   ~~~   **                                    Tair,out = 20.0000
-   **   ~~~   **                                    Wair,out = 1.340000E-002
-   **   ~~~   ** The revised design conditions are: Tair,out = 19.5969
-   **   ~~~   **                                    Wair,out = 1.356357E-002
-   ** Warning ** In calculating the design coil UA for Coil:Cooling:Water WATERCOOLINGCOIL_ABX_G_W
-   **   ~~~   ** the apparatus dew-point is below the coil design inlet water temperature;
-   **   ~~~   ** the coil outlet design conditions will be changed to correct the problem.
-   **   ~~~   ** The initial design conditions are: Tair,in = 37.0000
-   **   ~~~   **                                    Wair,in = 1.580000E-002
-   **   ~~~   **                                    Twater,in = 18.0000
-   **   ~~~   **                                    Tair,out = 20.0000
-   **   ~~~   **                                    Wair,out = 1.340000E-002
-   **   ~~~   ** The revised design conditions are: Tair,out = 19.5969
-   **   ~~~   **                                    Wair,out = 1.356357E-002
-   ** Warning ** DXFOut: Could not triangulate surface="DPVFLOOR:235057.1.ZONE_F_S", type="Floor", check surface vertex order(entry)
-   **   ~~~   ** ...use Output:Diagnostics,DisplayExtraWarnings; to show more details on individual surfaces.
+   ** Warning ** SetUpZoneGeometry: Entered Ceiling Height for Zone="DEFAULT_ZONE" significantly different from calculated Ceiling Height
+   **   ~~~   ** SetUpZoneGeometry: Entered Ceiling Height=6.38, Calculated Ceiling Height=6.97, entered height will be used in calculations.
+   ** Warning ** CheckUsedConstructions: There are 2 nominally unused constructions in input.
+   **   ~~~   ** Each Unused construction is shown.
+   ************* Construction=_DPV AW1 1995 WSV III_REVERSED
+   ************* Construction=_DPV BP1 2002 ENEV_REVERSED
    ************* Testing Individual Branch Integrity
    ************* All Branches passed integrity testing
    ************* Testing Individual Supply Air Path Integrity
@@ -318,76 +16,23 @@ Program Version,EnergyPlus, Version 8.2.0-e53a815bb2, YMD=2015.06.17 14:35,IDD_V
    ************* All Return Air Paths passed integrity testing
    ************* No node connection errors were found.
    ************* Beginning Simulation
-   ** Severe  ** EMS user program issued severe warning with error code = 1.50
-   **   ~~~   **  Environment=RUNPERIOD_WHOLEYEAR, at Simulation time=05/30 11:00 - 12:00
-   ** Severe  ** EMS user program issued severe warning with error code = 1.50
-   **   ~~~   **  Environment=RUNPERIOD_WHOLEYEAR, at Simulation time=06/01 10:00 - 11:00
-   ** Severe  ** EMS user program issued severe warning with error code = 1.50
-   **   ~~~   **  Environment=RUNPERIOD_WHOLEYEAR, at Simulation time=06/01 10:00 - 11:00
-   ** Severe  ** EMS user program issued severe warning with error code = 1.50
-   **   ~~~   **  Environment=RUNPERIOD_WHOLEYEAR, at Simulation time=06/01 11:00 - 12:00
-   ** Severe  ** EMS user program issued severe warning with error code = 1.50
-   **   ~~~   **  Environment=RUNPERIOD_WHOLEYEAR, at Simulation time=06/01 11:00 - 12:00
-   ** Severe  ** EMS user program issued severe warning with error code = 1.50
-   **   ~~~   **  Environment=RUNPERIOD_WHOLEYEAR, at Simulation time=06/01 11:00 - 12:00
-   ** Severe  ** EMS user program issued severe warning with error code = 1.50
-   **   ~~~   **  Environment=RUNPERIOD_WHOLEYEAR, at Simulation time=06/01 12:00 - 13:00
-   ** Severe  ** EMS user program issued severe warning with error code = 1.50
-   **   ~~~   **  Environment=RUNPERIOD_WHOLEYEAR, at Simulation time=06/01 12:00 - 13:00
-   ** Severe  ** EMS user program issued severe warning with error code = 1.50
-   **   ~~~   **  Environment=RUNPERIOD_WHOLEYEAR, at Simulation time=06/01 12:00 - 13:00
-   ** Severe  ** EMS user program issued severe warning with error code = 1.50
-   **   ~~~   **  Environment=RUNPERIOD_WHOLEYEAR, at Simulation time=06/01 15:00 - 16:00
-   ** Severe  ** EMS user program issued severe warning with error code = 1.50
-   **   ~~~   **  Environment=RUNPERIOD_WHOLEYEAR, at Simulation time=06/02 10:00 - 11:00
-   ** Severe  ** EMS user program issued severe warning with error code = 1.50
-   **   ~~~   **  Environment=RUNPERIOD_WHOLEYEAR, at Simulation time=06/02 10:00 - 11:00
-   ** Severe  ** EMS user program issued severe warning with error code = 1.50
-   **   ~~~   **  Environment=RUNPERIOD_WHOLEYEAR, at Simulation time=06/02 10:00 - 11:00
-   ** Severe  ** EMS user program issued severe warning with error code = 3.80
-   **   ~~~   **  Environment=RUNPERIOD_WHOLEYEAR, at Simulation time=07/01 22:40 - 23:00
-   ** Severe  ** EMS user program issued severe warning with error code = 3.80
-   **   ~~~   **  Environment=RUNPERIOD_WHOLEYEAR, at Simulation time=07/01 22:40 - 23:00
-   ** Severe  ** EMS user program issued severe warning with error code = 3.80
-   **   ~~~   **  Environment=RUNPERIOD_WHOLEYEAR, at Simulation time=07/01 22:40 - 23:00
-   ** Severe  ** EMS user program issued severe warning with error code = 3.80
-   **   ~~~   **  Environment=RUNPERIOD_WHOLEYEAR, at Simulation time=07/01 22:40 - 23:00
-   ** Severe  ** EMS user program issued severe warning with error code = 3.80
-   **   ~~~   **  Environment=RUNPERIOD_WHOLEYEAR, at Simulation time=07/01 22:40 - 23:00
-   ** Severe  ** EMS user program issued severe warning with error code = 3.80
-   **   ~~~   **  Environment=RUNPERIOD_WHOLEYEAR, at Simulation time=07/01 22:40 - 23:00
-   ** Severe  ** EMS user program issued severe warning with error code = 3.80
-   **   ~~~   **  Environment=RUNPERIOD_WHOLEYEAR, at Simulation time=07/01 22:40 - 23:00
-   ** Severe  ** EMS user program issued severe warning with error code = 3.80
-   **   ~~~   **  Environment=RUNPERIOD_WHOLEYEAR, at Simulation time=07/01 22:40 - 23:00
-   ** Severe  ** EMS user program issued severe warning with error code = 3.80
-   **   ~~~   **  Environment=RUNPERIOD_WHOLEYEAR, at Simulation time=07/01 22:40 - 23:00
-   ** Severe  ** EMS user program issued severe warning with error code = 3.80
-   **   ~~~   **  Environment=RUNPERIOD_WHOLEYEAR, at Simulation time=07/01 22:40 - 23:00
-   ** Severe  ** EMS user program issued severe warning with error code = 3.80
-   **   ~~~   **  Environment=RUNPERIOD_WHOLEYEAR, at Simulation time=07/01 22:40 - 23:00
-   ** Severe  ** EMS user program issued severe warning with error code = 3.80
-   **   ~~~   **  Environment=RUNPERIOD_WHOLEYEAR, at Simulation time=07/01 22:40 - 23:00
-   ** Severe  ** EMS user program issued severe warning with error code = 3.80
-   **   ~~~   **  Environment=RUNPERIOD_WHOLEYEAR, at Simulation time=07/01 22:40 - 23:00
-   ** Severe  ** EMS user program issued severe warning with error code = 3.80
-   **   ~~~   **  Environment=RUNPERIOD_WHOLEYEAR, at Simulation time=07/01 22:40 - 23:00
-   ** Severe  ** EMS user program issued severe warning with error code = 3.80
-   **   ~~~   **  Environment=RUNPERIOD_WHOLEYEAR, at Simulation time=07/01 22:40 - 23:00
-   ** Severe  ** EMS user program issued severe warning with error code = 3.80
-   **   ~~~   **  Environment=RUNPERIOD_WHOLEYEAR, at Simulation time=07/01 22:40 - 23:00
-   ** Severe  ** EMS user program issued severe warning with error code = 3.80
-   **   ~~~   **  Environment=RUNPERIOD_WHOLEYEAR, at Simulation time=07/01 22:40 - 23:00
-   ** Severe  ** EMS user program issued severe warning with error code = 3.80
-   **   ~~~   **  Environment=RUNPERIOD_WHOLEYEAR, at Simulation time=07/01 22:40 - 23:00
    ************* Simulation Error Summary *************
    ** Warning ** The following Report Variables were requested but not generated
    **   ~~~   ** because IDF did not contain these elements or misspelled variable name -- check .rdd file
-   ************* Key=*, VarName=ZONE VENTILATION SENSIBLE HEAT LOSS ENERGY, Frequency=Timestep
-   ************* Key=*, VarName=ZONE VENTILATION SENSIBLE HEAT GAIN ENERGY, Frequency=Timestep
-   ************* There are 5 unused schedules in input.
-   ************* There are 9 unused week schedules in input.
-   ************* There are 9 unused day schedules in input.
+   ************* Key=*, VarName=PEOPLE TOTAL HEAT GAIN, Frequency=Annual
+   ************* Key=*, VarName=LIGHTS TOTAL HEAT GAIN, Frequency=Annual
+   ************* Key=*, VarName=ELECTRIC EQUIPMENT TOTAL HEAT GAIN, Frequency=Annual
+   ************* Key=*, VarName=TOTAL ELECTRIC ENERGY PRODUCED, Frequency=Annual
+   ************* Key=*, VarName=ZONE INFILTRATION TOTAL HEAT LOSS, Frequency=Annual
+   ************* Key=*, VarName=ZONE VENTILATION TOTAL HEAT LOSS, Frequency=Annual
+   ************* Key=*, VarName=ZONE WINDOW HEAT GAIN ENERGY, Frequency=Annual
+   ************* Key=*, VarName=ZONE WINDOW HEAT LOSS ENERGY, Frequency=Annual
+   ************* Key=*, VarName=SURFACE OUTSIDE FACE OUTDOOR WIND VELOCITY, Frequency=Timestep
+   ************* Key=*, VarName=DIRECT SOLAR, Frequency=Annual
+   ************* Key=*, VarName=IDEAL LOADS ZONE TOTAL HEATING ENERGY, Frequency=Hourly
+   ************* Key=*, VarName=IDEAL LOADS ZONE TOTAL COOLING ENERGY, Frequency=Hourly
+   ************* Key=*, VarName=OUTDOOR DRY BULB, Frequency=Hourly
+   ************* There are 1 unused schedules in input.
    ************* Use Output:Diagnostics,DisplayUnusedSchedules; to see them.
    *************
    ************* ===== Final Error Summary =====
@@ -399,4 +44,4 @@ Program Version,EnergyPlus, Version 8.2.0-e53a815bb2, YMD=2015.06.17 14:35,IDD_V
    *************
    ************* EnergyPlus Warmup Error Summary. During Warmup: 0 Warning; 0 Severe Errors.
    ************* EnergyPlus Sizing Error Summary. During Sizing: 0 Warning; 0 Severe Errors.
-   ************* EnergyPlus Completed Successfully-- 70 Warning; 32 Severe Errors; Elapsed Time=00hr 02min 21.00sec
+   ************* EnergyPlus Completed Successfully-- 5 Warning; 0 Severe Errors; Elapsed Time=00hr 00min  8.00sec
