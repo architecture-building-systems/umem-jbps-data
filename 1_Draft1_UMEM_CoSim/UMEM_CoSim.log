@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.3.11)  2 JUN 2015 11:11
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.3.11)  31 JUL 2015 15:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -424,7 +424,7 @@ File: figures/UMEM_overview_new.pdf Graphic file (type pdf)
 
 <use figures/UMEM_overview_new.pdf>
 Package pdftex.def Info: figures/UMEM_overview_new.pdf used on input line 122.
-(pdftex.def)             Requested size: 216.2373pt x 264.60994pt.
+(pdftex.def)             Requested size: 151.36545pt x 185.22614pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -435,23 +435,29 @@ Overfull \vbox (29.0pt too high) has occurred while \output is active []
 Overfull \vbox (741.135pt too high) has occurred while \output is active []
 
 
-[2]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \vbox (29.0pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (741.135pt too high) has occurred while \output is active []
-
-
-[3 <./figures/UMEM_overview_new.pdf>]
-<figures/UMEM_Workflow.pdf, id=56, 216.23785pt x 298.75415pt>
+[2 <./figures/UMEM_overview_new.pdf>]
+<figures/UMEM_Workflow.pdf, id=53, 216.23785pt x 298.75415pt>
 File: figures/UMEM_Workflow.pdf Graphic file (type pdf)
 
 <use figures/UMEM_Workflow.pdf>
 Package pdftex.def Info: figures/UMEM_Workflow.pdf used on input line 152.
-(pdftex.def)             Requested size: 216.2373pt x 298.75342pt.
+(pdftex.def)             Requested size: 151.36545pt x 209.12648pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (29.0pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (741.135pt too high) has occurred while \output is active []
+
+
+[3] <figures/UMEM_FMU_Overview.pdf, id=57, 216.23785pt x 119.50145pt>
+File: figures/UMEM_FMU_Overview.pdf Graphic file (type pdf)
+
+<use figures/UMEM_FMU_Overview.pdf>
+Package pdftex.def Info: figures/UMEM_FMU_Overview.pdf used on input line 165.
+(pdftex.def)             Requested size: 151.36545pt x 83.65042pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -463,16 +469,9 @@ Overfull \vbox (741.135pt too high) has occurred while \output is active []
 
 
 [4 <./figures/UMEM_Workflow.pdf>]
-<figures/UMEM_FMU_Overview.pdf, id=86, 216.23785pt x 119.50145pt>
-File: figures/UMEM_FMU_Overview.pdf Graphic file (type pdf)
-
-<use figures/UMEM_FMU_Overview.pdf>
-Package pdftex.def Info: figures/UMEM_FMU_Overview.pdf used on input line 165.
-(pdftex.def)             Requested size: 216.2373pt x 119.50114pt.
-
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 219.
+(Font)              size <5> substituted on input line 222.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -485,20 +484,61 @@ Overfull \vbox (741.135pt too high) has occurred while \output is active []
 
 
 [5 <./figures/UMEM_FMU_Overview.pdf>]
-<figures/campuscitysim.png, id=123, 1041.1397pt x 621.82312pt>
-File: figures/campuscitysim.png Graphic file (type png)
-
-<use figures/campuscitysim.png>
-Package pdftex.def Info: figures/campuscitysim.png used on input line 238.
-(pdftex.def)             Requested size: 312.34431pt x 186.54837pt.
-
-<figures/pointbreakdown_anon.pdf, id=125, 244.9953pt x 325.215pt>
+<figures/pointbreakdown_anon.pdf, id=128, 244.9953pt x 361.35pt>
 File: figures/pointbreakdown_anon.pdf Graphic file (type pdf)
 
 <use figures/pointbreakdown_anon.pdf>
-Package pdftex.def Info: figures/pointbreakdown_anon.pdf used on input line 247
+Package pdftex.def Info: figures/pointbreakdown_anon.pdf used on input line 239
 .
-(pdftex.def)             Requested size: 244.99469pt x 325.2142pt.
+(pdftex.def)             Requested size: 171.49553pt x 252.94327pt.
+
+<figures/ETH_Hoenngerbergcamp_targetedbuildings.pdf, id=129, 401.5pt x 392.4662
+5pt>
+File: figures/ETH_Hoenngerbergcamp_targetedbuildings.pdf Graphic file (type pdf
+)
+ <use figures/ETH_Hoenngerbergcamp_targetedbuildings.pdf>
+Package pdftex.def Info: figures/ETH_Hoenngerbergcamp_targetedbuildings.pdf use
+d on input line 251.
+(pdftex.def)             Requested size: 200.7495pt x 196.23264pt.
+
+<figures/campuscitysim.png, id=130, 1041.1397pt x 621.82312pt>
+File: figures/campuscitysim.png Graphic file (type png)
+
+<use figures/campuscitysim.png>
+Package pdftex.def Info: figures/campuscitysim.png used on input line 261.
+(pdftex.def)             Requested size: 208.22424pt x 124.36241pt.
+
+<figures/HPZ_combinedclusterandcal_4.pdf, id=132, 533.99298pt x 168.63101pt>
+File: figures/HPZ_combinedclusterandcal_4.pdf Graphic file (type pdf)
+
+<use figures/HPZ_combinedclusterandcal_4.pdf>
+Package pdftex.def Info: figures/HPZ_combinedclusterandcal_4.pdf used on input 
+line 271.
+(pdftex.def)             Requested size: 240.29462pt x 75.88324pt.
+
+<figures/HPK_combinedclusterandcal_4.pdf, id=133, 538.34224pt x 168.63101pt>
+File: figures/HPK_combinedclusterandcal_4.pdf Graphic file (type pdf)
+
+<use figures/HPK_combinedclusterandcal_4.pdf>
+Package pdftex.def Info: figures/HPK_combinedclusterandcal_4.pdf used on input 
+line 278.
+(pdftex.def)             Requested size: 242.25177pt x 75.88324pt.
+
+<figures/HPI_combinedclusterandcal_4.pdf, id=134, 538.34224pt x 168.63101pt>
+File: figures/HPI_combinedclusterandcal_4.pdf Graphic file (type pdf)
+
+<use figures/HPI_combinedclusterandcal_4.pdf>
+Package pdftex.def Info: figures/HPI_combinedclusterandcal_4.pdf used on input 
+line 285.
+(pdftex.def)             Requested size: 242.25177pt x 75.88324pt.
+
+<figures/HIT_combinedclusterandcal_4.pdf, id=135, 538.34224pt x 168.63101pt>
+File: figures/HIT_combinedclusterandcal_4.pdf Graphic file (type pdf)
+
+<use figures/HIT_combinedclusterandcal_4.pdf>
+Package pdftex.def Info: figures/HIT_combinedclusterandcal_4.pdf used on input 
+line 292.
+(pdftex.def)             Requested size: 242.25177pt x 75.88324pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -509,7 +549,7 @@ Overfull \vbox (29.0pt too high) has occurred while \output is active []
 Overfull \vbox (741.135pt too high) has occurred while \output is active []
 
 
-[6] (./UMEM_CoSim.bbl
+[6]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -522,7 +562,8 @@ Overfull \vbox (29.0pt too high) has occurred while \output is active []
 Overfull \vbox (741.135pt too high) has occurred while \output is active []
 
 
-[7 <./figures/campuscitysim.png> <./figures/pointbreakdown_anon.pdf>])
+[7 <./figures/pointbreakdown_anon.pdf> <./figures/ETH_Hoenngerbergcamp_targeted
+buildings.pdf> <./figures/campuscitysim.png>] (./UMEM_CoSim.bbl
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -532,44 +573,57 @@ Overfull \vbox (29.0pt too high) has occurred while \output is active []
 Overfull \vbox (741.135pt too high) has occurred while \output is active []
 
 
-[8] (./UMEM_CoSim.aux)
+[8 <./figures/HPZ_combinedclusterandcal_4.pdf> <./figures/HPK_combinedclusteran
+dcal_4.pdf> <./figures/HPI_combinedclusterandcal_4.pdf> <./figures/HIT_combined
+clusterandcal_4.pdf>])
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (29.0pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (741.135pt too high) has occurred while \output is active []
+
+
+[9] (./UMEM_CoSim.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
 
  ) 
 Here is how much of TeX's memory you used:
- 3527 strings out of 493315
- 46233 string characters out of 6137904
- 112130 words of memory out of 5000000
- 6887 multiletter control sequences out of 15000+600000
+ 3554 strings out of 493315
+ 47327 string characters out of 6137904
+ 111142 words of memory out of 5000000
+ 6909 multiletter control sequences out of 15000+600000
  75642 words of font info for 69 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  42i,12n,27p,1539b,275s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/lo
 cal/texlive/2013/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/20
 13/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/local/texlive/2013/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2013/texmf-dist
-/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2013/texmf-dist/fonts/typ
-e1/public/lm/lmbx8.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/l
-m/lmbx9.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/lm/lmbxi10.p
-fb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/lo
-cal/texlive/2013/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive
-/2013/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2013/texmf
--dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2013/texmf-dist/fonts
-/type1/public/lm/lmr6.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/publi
-c/lm/lmr7.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/lm/lmr8.pf
-b></usr/local/texlive/2013/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/loca
-l/texlive/2013/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/
-2013/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2013/texmf
--dist/fonts/type1/public/lm/lmri8.pfb></usr/local/texlive/2013/texmf-dist/fonts
-/type1/public/lm/lmsy6.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/publ
-ic/lm/lmsy7.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/ncntrsbk/un
-cr8a.pfb>
-Output written on UMEM_CoSim.pdf (8 pages, 1403381 bytes).
+ist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2013/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2013/texmf-dist/fo
+nts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/
+public/lm/lmbx8.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/lm/l
+mbx9.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb>
+</usr/local/texlive/2013/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local
+/texlive/2013/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/20
+13/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2013/texmf-di
+st/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2013/texmf-dist/fonts/ty
+pe1/public/lm/lmr6.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/l
+m/lmr7.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/lm/lmr8.pfb><
+/usr/local/texlive/2013/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/t
+exlive/2013/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/201
+3/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2013/texmf-di
+st/fonts/type1/public/lm/lmri8.pfb></usr/local/texlive/2013/texmf-dist/fonts/ty
+pe1/public/lm/lmsy6.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/
+lm/lmsy7.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8
+a.pfb>
+Output written on UMEM_CoSim.pdf (9 pages, 2310326 bytes).
 PDF statistics:
- 214 PDF objects out of 1000 (max. 8388607)
- 126 compressed objects within 2 object streams
+ 323 PDF objects out of 1000 (max. 8388607)
+ 177 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 
