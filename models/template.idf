@@ -173,3 +173,11 @@ Schedule:Compact,
     0.3000,                   !- Field 97
     Until: 24:00,             !- Field 98
     0.3000;                   !- Field 99
+
+ShadowCalculation,
+    AverageOverDaysInFrequency,  !- Calculation Method
+    20,                          !- Calculation Frequency
+    5000000,                     !- Maximum Figures in Shadow Overlap Calculations
+    SutherlandHodgman,           !- Polygon Clipping Algorithm
+    SimpleSkyDiffuseModeling;    !- Sky Diffuse Modeling Algorithm
+
