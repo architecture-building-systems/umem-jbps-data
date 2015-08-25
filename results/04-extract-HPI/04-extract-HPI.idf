@@ -10,7 +10,7 @@ SimulationControl,
     Yes;                      !- Run Simulation for Weather File Run Periods
 
 Building,                 
-    RevitModel_nowindows,     !- Name
+    HPI,                      !- Name
     0.0,                      !- North Axis
     Suburbs,                  !- Terrain
     0.04,                     !- Loads Convergence Tolerance Value
@@ -18,6 +18,13 @@ Building,
     FullExterior,             !- Solar Distribution
     100,                      !- Maximum Number of Warmup Days
     6;                        !- Minimum Number of Warmup Days
+
+ShadowCalculation,        
+    AverageOverDaysInFrequency,    !- Calculation Method
+    20,                       !- Calculation Frequency
+    500000,                   !- Maximum Figures in Shadow Overlap Calculations
+    SutherlandHodgman,        !- Polygon Clipping Algorithm
+    SimpleSkyDiffuseModelin;    !- Sky Diffuse Modeling Algorithm
 
 SurfaceConvectionAlgorithm:Inside,
     TARP;                     !- Algorithm
