@@ -1,0 +1,436 @@
+Version,                  
+    8.2;                      !- Version Identifier
+
+SimulationControl,        
+    No,                       !- Do Zone Sizing Calculation
+    No,                       !- Do System Sizing Calculation
+    No,                       !- Do Plant Sizing Calculation
+    No,                       !- Run Simulation for Sizing Periods
+    Yes;                      !- Run Simulation for Weather File Run Periods
+
+Building,                 
+    HPI,                      !- Name
+    0.0,                      !- North Axis
+    Suburbs,                  !- Terrain
+    0.04,                     !- Loads Convergence Tolerance Value
+    0.004,                    !- Temperature Convergence Tolerance Value
+    FullExterior,             !- Solar Distribution
+    100,                      !- Maximum Number of Warmup Days
+    6;                        !- Minimum Number of Warmup Days
+
+SurfaceConvectionAlgorithm:Inside,
+    TARP;                     !- Algorithm
+
+SurfaceConvectionAlgorithm:Outside,
+    DOE-2;                    !- Algorithm
+
+HeatBalanceAlgorithm,     
+    ConductionTransferFunction,    !- Algorithm
+    200.0;                    !- Surface Temperature Upper Limit
+
+Timestep,                 
+    1;                        !- Number of Timesteps per Hour
+
+RunPeriod,                
+    ,                         !- Name
+    1,                        !- Begin Month
+    1,                        !- Begin Day of Month
+    12,                       !- End Month
+    31,                       !- End Day of Month
+    Tuesday,                  !- Day of Week for Start Day
+    Yes,                      !- Use Weather File Holidays and Special Days
+    Yes,                      !- Use Weather File Daylight Saving Period
+    No,                       !- Apply Weekend Holiday Rule
+    Yes,                      !- Use Weather File Rain Indicators
+    Yes;                      !- Use Weather File Snow Indicators
+
+GlobalGeometryRules,
+    LowerLeftCorner                                   , !- Starting Vertex Position
+    CounterClockWise                                  , !- Vertex Entry Direction
+    Relative                                          ; !- Coordinate System
+
+Output:Diagnostics,
+    DisplayExtraWarnings                              ; !- 
+
+Output:Diagnostics,
+    DisplayAdvancedReportVariables                    ; !- 
+
+Output:VariableDictionary,
+    regular                                           ; !- 
+
+Output:Table:SummaryReports,
+    AllSummary                                        ; !- 
+
+OutputControl:Table:Style,
+    All                                               ; !- 
+
+Output:Variable,
+    *                                                 , !- 
+    Zone Mean Air Temperature                         , !- 
+    Hourly                                            ; !- 
+
+
+Schedule:Compact,
+	OccupationSchedule,
+	Fraction,
+	Through: 12/31,
+	For: Weekdays,
+	Until: 01:00,
+	0.0000,
+	Until: 02:00,
+	0.0000,
+	Until: 03:00,
+	0.0000,
+	Until: 04:00,
+	0.0000,
+	Until: 05:00,
+	0.0000,
+	Until: 06:00,
+	0.0000,
+	Until: 07:00,
+	0.0000,
+	Until: 08:00,
+	0.1000,
+	Until: 09:00,
+	0.2000,
+	Until: 10:00,
+	0.9500,
+	Until: 11:00,
+	0.9500,
+	Until: 12:00,
+	0.4500,
+	Until: 13:00,
+	0.4500,
+	Until: 14:00,
+	0.9500,
+	Until: 15:00,
+	0.9500,
+	Until: 16:00,
+	0.9500,
+	Until: 17:00,
+	0.9500,
+	Until: 18:00,
+	0.9500,
+	Until: 19:00,
+	0.3000,
+	Until: 20:00,
+	0.1000,
+	Until: 21:00,
+	0.1000,
+	Until: 22:00,
+	0.1000,
+	Until: 23:00,
+	0.0000,
+	Until: 24:00,
+	0.0000,
+	For: Weekends Holidays SummerDesignDay WinterDesignDay CustomDay1 CustomDay2,
+	Until: 01:00,
+	0.0000,
+	Until: 02:00,
+	0.0000,
+	Until: 03:00,
+	0.0000,
+	Until: 04:00,
+	0.0000,
+	Until: 05:00,
+	0.0000,
+	Until: 06:00,
+	0.0000,
+	Until: 07:00,
+	0.0000,
+	Until: 08:00,
+	0.0000,
+	Until: 09:00,
+	0.0500,
+	Until: 10:00,
+	0.0500,
+	Until: 11:00,
+	0.0500,
+	Until: 12:00,
+	0.0500,
+	Until: 13:00,
+	0.0500,
+	Until: 14:00,
+	0.0500,
+	Until: 15:00,
+	0.0500,
+	Until: 16:00,
+	0.0500,
+	Until: 17:00,
+	0.0500,
+	Until: 18:00,
+	0.0500,
+	Until: 19:00,
+	0.0000,
+	Until: 20:00,
+	0.0000,
+	Until: 21:00,
+	0.0000,
+	Until: 22:00,
+	0.0000,
+	Until: 23:00,
+	0.0000,
+	Until: 24:00,
+	0.0000;
+
+Schedule:Compact,         
+    VentilationSchedule,      !- Name
+    Fraction,                 !- Schedule Type Limits Name
+    Through: 12/31,           !- Field 1
+    For: Weekdays,            !- Field 2
+    Until: 01:00,             !- Field 3
+    0.3000,                   !- Field 4
+    Until: 02:00,             !- Field 5
+    0.3000,                   !- Field 6
+    Until: 03:00,             !- Field 7
+    0.3000,                   !- Field 8
+    Until: 04:00,             !- Field 9
+    0.3000,                   !- Field 10
+    Until: 05:00,             !- Field 11
+    0.3000,                   !- Field 12
+    Until: 06:00,             !- Field 13
+    0.3000,                   !- Field 14
+    Until: 07:00,             !- Field 15
+    0.3000,                   !- Field 16
+    Until: 08:00,             !- Field 17
+    0.3000,                   !- Field 18
+    Until: 09:00,             !- Field 19
+    0.3000,                   !- Field 20
+    Until: 10:00,             !- Field 21
+    0.9500,                   !- Field 22
+    Until: 11:00,             !- Field 23
+    0.9500,                   !- Field 24
+    Until: 12:00,             !- Field 25
+    0.4500,                   !- Field 26
+    Until: 13:00,             !- Field 27
+    0.4500,                   !- Field 28
+    Until: 14:00,             !- Field 29
+    0.9500,                   !- Field 30
+    Until: 15:00,             !- Field 31
+    0.9500,                   !- Field 32
+    Until: 16:00,             !- Field 33
+    0.9500,                   !- Field 34
+    Until: 17:00,             !- Field 35
+    0.9500,                   !- Field 36
+    Until: 18:00,             !- Field 37
+    0.9500,                   !- Field 38
+    Until: 19:00,             !- Field 39
+    0.3000,                   !- Field 40
+    Until: 20:00,             !- Field 41
+    0.3000,                   !- Field 42
+    Until: 21:00,             !- Field 43
+    0.3000,                   !- Field 44
+    Until: 22:00,             !- Field 45
+    0.3000,                   !- Field 46
+    Until: 23:00,             !- Field 47
+    0.3000,                   !- Field 48
+    Until: 24:00,             !- Field 49
+    0.3000,                   !- Field 50
+    For: Weekends Holidays SummerDesignDay WinterDesignDay CustomDay1 CustomDay2,    !- Field 51
+    Until: 01:00,             !- Field 52
+    0.3000,                   !- Field 53
+    Until: 02:00,             !- Field 54
+    0.3000,                   !- Field 55
+    Until: 03:00,             !- Field 56
+    0.3000,                   !- Field 57
+    Until: 04:00,             !- Field 58
+    0.3000,                   !- Field 59
+    Until: 05:00,             !- Field 60
+    0.3000,                   !- Field 61
+    Until: 06:00,             !- Field 62
+    0.3000,                   !- Field 63
+    Until: 07:00,             !- Field 64
+    0.3000,                   !- Field 65
+    Until: 08:00,             !- Field 66
+    0.3000,                   !- Field 67
+    Until: 09:00,             !- Field 68
+    0.3000,                   !- Field 69
+    Until: 10:00,             !- Field 70
+    0.3000,                   !- Field 71
+    Until: 11:00,             !- Field 72
+    0.3000,                   !- Field 73
+    Until: 12:00,             !- Field 74
+    0.3000,                   !- Field 75
+    Until: 13:00,             !- Field 76
+    0.3000,                   !- Field 77
+    Until: 14:00,             !- Field 78
+    0.3000,                   !- Field 79
+    Until: 15:00,             !- Field 80
+    0.3000,                   !- Field 81
+    Until: 16:00,             !- Field 82
+    0.3000,                   !- Field 83
+    Until: 17:00,             !- Field 84
+    0.3000,                   !- Field 85
+    Until: 18:00,             !- Field 86
+    0.3000,                   !- Field 87
+    Until: 19:00,             !- Field 88
+    0.3000,                   !- Field 89
+    Until: 20:00,             !- Field 90
+    0.3000,                   !- Field 91
+    Until: 21:00,             !- Field 92
+    0.3000,                   !- Field 93
+    Until: 22:00,             !- Field 94
+    0.3000,                   !- Field 95
+    Until: 23:00,             !- Field 96
+    0.3000,                   !- Field 97
+    Until: 24:00,             !- Field 98
+    0.3000;                   !- Field 99
+
+Schedule:Compact,
+	InfiltrationSchedule,
+	Fraction,
+	Through: 12/31,
+	For: Weekdays,
+	Until: 01:00,
+	0.2000,
+	Until: 02:00,
+	0.2000,
+	Until: 03:00,
+	0.2000,
+	Until: 04:00,
+	0.2000,
+	Until: 05:00,
+	0.2000,
+	Until: 06:00,
+	0.2000,
+	Until: 07:00,
+	0.2000,
+	Until: 08:00,
+	0.2000,
+	Until: 09:00,
+	0.2000,
+	Until: 10:00,
+	0.2000,
+	Until: 11:00,
+	0.2000,
+	Until: 12:00,
+	0.2000,
+	Until: 13:00,
+	0.2000,
+	Until: 14:00,
+	0.2000,
+	Until: 15:00,
+	0.2000,
+	Until: 16:00,
+	0.2000,
+	Until: 17:00,
+	0.2000,
+	Until: 18:00,
+	0.2000,
+	Until: 19:00,
+	0.2000,
+	Until: 20:00,
+	0.2000,
+	Until: 21:00,
+	0.2000,
+	Until: 22:00,
+	0.2000,
+	Until: 23:00,
+	0.2000,
+	Until: 24:00,
+	0.2000,
+	For: Weekends Holidays SummerDesignDay WinterDesignDay CustomDay1 CustomDay2,
+	Until: 01:00,
+	0.2000,
+	Until: 02:00,
+	0.2000,
+	Until: 03:00,
+	0.2000,
+	Until: 04:00,
+	0.2000,
+	Until: 05:00,
+	0.2000,
+	Until: 06:00,
+	0.2000,
+	Until: 07:00,
+	0.2000,
+	Until: 08:00,
+	0.2000,
+	Until: 09:00,
+	0.2000,
+	Until: 10:00,
+	0.2000,
+	Until: 11:00,
+	0.2000,
+	Until: 12:00,
+	0.2000,
+	Until: 13:00,
+	0.2000,
+	Until: 14:00,
+	0.2000,
+	Until: 15:00,
+	0.2000,
+	Until: 16:00,
+	0.2000,
+	Until: 17:00,
+	0.2000,
+	Until: 18:00,
+	0.2000,
+	Until: 19:00,
+	0.2000,
+	Until: 20:00,
+	0.2000,
+	Until: 21:00,
+	0.2000,
+	Until: 22:00,
+	0.2000,
+	Until: 23:00,
+	0.2000,
+	Until: 24:00,
+	0.2000;
+
+ShadowCalculation,
+    AverageOverDaysInFrequency,  !- Calculation Method
+    20,                          !- Calculation Frequency
+    50000,                       !- Maximum Figures in Shadow Overlap Calculations
+    SutherlandHodgman,           !- Polygon Clipping Algorithm
+    SimpleSkyDiffuseModeling;    !- Sky Diffuse Modeling Algorithm
+
+ZoneInfiltration:DesignFlowRate,
+	Zone11466_Infiltration,
+	Zone11466,
+	InfiltrationSchedule,
+	AirChanges/Hour,
+	,
+	,
+	,
+	0.4000,
+	1,
+	0,
+	0,
+	0;
+
+ZoneVentilation:DesignFlowRate,
+	Zone11466_VentilationSystem,
+	Zone11466,
+	VentilationSchedule,
+	AirChanges/Hour,
+	,
+	,
+	,
+	0.7000,
+	Natural,
+	0.0000,
+	1.0000,
+	1,
+	0,
+	0,
+	0,
+	20,
+	,
+	100,
+	,
+	1,
+	,
+	-10,
+	,
+	26,
+	,
+	40;
+
+ScheduleTypeLimits,
+	Fraction,
+	0,
+	1,
+	Continuous,
+	Dimensionless;
