@@ -1,0 +1,27 @@
+Surface Outside Face Thermal Radiation to Air Heat Transfer Coefficient
+Surface Outside Face Thermal Radiation to Sky Heat Transfer Coefficient
+Surface Outside Face Thermal Radiation to Ground Heat Transfer Coefficient
+Surface Outside Face Solar Radiation Heat Gain Rate
+Surface Outside Face Solar Radiation Heat Gain Rate per Area
+Surface Outside Face Solar Radiation Heat Gain Energy
+Site Outdoor Air Drybulb Temperature
+Site Sky Temperature
+Zone Ideal Loads Zone Sensible Heating Energy
+Zone Ideal Loads Zone Latent Heating Energy
+Zone Ideal Loads Zone Total Heating Energy
+Zone Ideal Loads Zone Sensible Cooling Energy
+Zone Ideal Loads Zone Latent Cooling Energy
+Zone Ideal Loads Zone Total Cooling Energy
+Zone Ideal Loads Outdoor Air Sensible Heating Energy
+Zone Ideal Loads Outdoor Air Latent Heating Energy
+Zone Ideal Loads Outdoor Air Total Heating Energy
+Zone Ideal Loads Outdoor Air Sensible Cooling Energy
+Zone Ideal Loads Outdoor Air Latent Cooling Energy
+Zone Ideal Loads Outdoor Air Total Cooling Energy
+Ground Temperature For Radiation Exchange
+Sky Temperature For Radiation Exchange
+Surface Outside Face Net Thermal Radiation Heat Gain Energy
+Surface Inside Face Conduction Heat Gain Rate
+Surface Inside Face Conduction Heat Loss Rate
+Exterior Surface Environment Radiation Coefficient
+Exterior Surface Environment Temperature For Radiation Exchange
