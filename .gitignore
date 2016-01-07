@@ -2,3 +2,4 @@ ipy-notebooks/.ipynb_checkpoints
 *.swp
 .ropeproject/*
 weatherfiles/Zurich-Kloten_2013_SW.out
+debugging/*
