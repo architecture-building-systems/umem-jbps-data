@@ -566,7 +566,7 @@ OS:Space,
   ,                                       !- Space Type Name
   ,                                       !- Default Construction Set Name
   ,                                       !- Default Schedule Set Name
-  0,                                      !- Direction of Relative North {deg}
+  -0,                                     !- Direction of Relative North {deg}
   0,                                      !- X Origin {m}
   0,                                      !- Y Origin {m}
   0,                                      !- Z Origin {m}
@@ -984,10 +984,10 @@ OS:Surface,
   WindExposed,                            !- Wind Exposure
   ,                                       !- View Factor to Ground
   ,                                       !- Number of Vertices
-  -163.708404541, -84.625289917, 27.4399993896, !- X,Y,Z Vertex 1 {m}
-  -163.708404541, -84.625289917, 0,       !- X,Y,Z Vertex 2 {m}
+  -163.708404541016, -84.6252899169922, 27.4399993896484, !- X,Y,Z Vertex 1 {m}
+  -163.708404541016, -84.6252899169922, 0, !- X,Y,Z Vertex 2 {m}
   -144.362335205, -84.625289917, 0,       !- X,Y,Z Vertex 3 {m}
-  -144.362335205, -84.625289917, 27.4399993896; !- X,Y,Z Vertex 4 {m}
+  -144.362335205078, -84.6252899169922, 27.4399993896484; !- X,Y,Z Vertex 4 {m}
 
 OS:ShadingSurface,
   {19215070-915a-435f-b02e-c1dd932b7b88}, !- Handle
@@ -2273,7 +2273,7 @@ OS:Surface,
   ,                                       !- Number of Vertices
   -149.903747558594, -46.0463600158691, 34.2999992370606, !- X,Y,Z Vertex 1 {m}
   -149.903747558594, -46.0463600158691, 27.4399993896484, !- X,Y,Z Vertex 2 {m}
-  -163.708404541016, -46.0463600158691, 27.4399993896484, !- X,Y,Z Vertex 3 {m}
+  -163.708404541, -46.0463600159, 27.4399993896, !- X,Y,Z Vertex 3 {m}
   -163.708404541016, -46.0463600158691, 34.2999992370606; !- X,Y,Z Vertex 4 {m}
 
 OS:ShadingSurface,
@@ -2858,9 +2858,9 @@ OS:Surface,
   WindExposed,                            !- Wind Exposure
   ,                                       !- View Factor to Ground
   ,                                       !- Number of Vertices
-  -144.362335205, -46.0463600159, 27.4399993896, !- X,Y,Z Vertex 1 {m}
+  -144.362335205078, -46.0463600158691, 27.4399993896484, !- X,Y,Z Vertex 1 {m}
   -144.362335205, -46.0463600159, 0,      !- X,Y,Z Vertex 2 {m}
-  -163.708404541, -46.0463600159, 0,      !- X,Y,Z Vertex 3 {m}
+  -163.708404541016, -46.0463600158691, 0, !- X,Y,Z Vertex 3 {m}
   -163.708404541, -46.0463600159, 27.4399993896; !- X,Y,Z Vertex 4 {m}
 
 OS:ShadingSurface,
@@ -3462,10 +3462,10 @@ OS:Surface,
   WindExposed,                            !- Wind Exposure
   ,                                       !- View Factor to Ground
   ,                                       !- Number of Vertices
-  -163.708404541, -46.0463600159, 34.2999992371, !- X,Y,Z Vertex 1 {m}
-  -163.708404541, -46.0463600159, 0,      !- X,Y,Z Vertex 2 {m}
-  -163.708404541, -84.625289917, 0,       !- X,Y,Z Vertex 3 {m}
-  -163.708404541, -84.625289917, 34.2999992371; !- X,Y,Z Vertex 4 {m}
+  -163.708404541016, -46.0463600158691, 34.2999992370606, !- X,Y,Z Vertex 1 {m}
+  -163.708404541016, -46.0463600158691, 0, !- X,Y,Z Vertex 2 {m}
+  -163.708404541016, -84.6252899169922, 0, !- X,Y,Z Vertex 3 {m}
+  -163.708404541016, -84.6252899169922, 34.2999992370606; !- X,Y,Z Vertex 4 {m}
 
 OS:Output:Variable,
   {a00ca6cc-bbf1-4dc7-a470-f6ae4fa3b2eb}, !- Handle
@@ -3554,10 +3554,10 @@ OS:Surface,
   WindExposed,                            !- Wind Exposure
   ,                                       !- View Factor to Ground
   ,                                       !- Number of Vertices
-  -144.362335205, -84.625289917, 28,      !- X,Y,Z Vertex 1 {m}
+  -144.362335205078, -84.6252899169922, 28, !- X,Y,Z Vertex 1 {m}
   -144.362335205, -84.625289917, 0,       !- X,Y,Z Vertex 2 {m}
   -144.362335205, -46.0463600159, 0,      !- X,Y,Z Vertex 3 {m}
-  -144.362335205, -46.0463600159, 28;     !- X,Y,Z Vertex 4 {m}
+  -144.362335205078, -46.0463600158691, 28; !- X,Y,Z Vertex 4 {m}
 
 OS:ShadingSurface,
   {e36acd86-06d4-4204-bd3d-c09b4212ecbe}, !- Handle
@@ -4512,23 +4512,6 @@ OS:Output:Variable,
   Surface Outside Face Solar Radiation Heat Gain Rate per Area, !- Variable Name
   timestep;                               !- Reporting Frequency
 
-OS:Surface,
-  {bfd0cf06-a60e-425b-9dcd-e5a1eacbbee0}, !- Handle
-  Roof3549,                               !- Name
-  RoofCeiling,                            !- Surface Type
-  {aec2bcb2-25e5-4785-8ab8-67a97c587746}, !- Construction Name
-  {2199d41a-46e9-423a-bad3-bb4bf344a16f}, !- Space Name
-  Outdoors,                               !- Outside Boundary Condition
-  ,                                       !- Outside Boundary Condition Object
-  SunExposed,                             !- Sun Exposure
-  WindExposed,                            !- Wind Exposure
-  ,                                       !- View Factor to Ground
-  ,                                       !- Number of Vertices
-  -144.362335205078, -84.6252899169922, 28, !- X,Y,Z Vertex 1 {m}
-  -144.362335205078, -46.0463600158691, 28, !- X,Y,Z Vertex 2 {m}
-  -149.903747558594, -46.0463600158691, 28, !- X,Y,Z Vertex 3 {m}
-  -149.903747558594, -84.6252899169922, 28; !- X,Y,Z Vertex 4 {m}
-
 OS:SpaceInfiltration:DesignFlowRate,
   {6794376e-a7e4-41eb-b814-454223b0ed4f}, !- Handle
   Zone11466_Infiltration,                 !- Name
@@ -5163,10 +5146,10 @@ OS:Surface,
   NoWind,                                 !- Wind Exposure
   ,                                       !- View Factor to Ground
   ,                                       !- Number of Vertices
-  -144.362335205078, -46.0463600158691, 0, !- X,Y,Z Vertex 1 {m}
-  -144.362335205078, -84.6252899169922, 0, !- X,Y,Z Vertex 2 {m}
-  -163.708404541016, -84.6252899169922, 0, !- X,Y,Z Vertex 3 {m}
-  -163.708404541016, -46.0463600158691, 0; !- X,Y,Z Vertex 4 {m}
+  -163.708404541016, -46.0463600158691, 0, !- X,Y,Z Vertex 1 {m}
+  -144.362335205, -46.0463600159, 0,      !- X,Y,Z Vertex 2 {m}
+  -144.362335205, -84.625289917, 0,       !- X,Y,Z Vertex 3 {m}
+  -163.708404541016, -84.6252899169922, 0; !- X,Y,Z Vertex 4 {m}
 
 OS:ShadingSurface,
   {726e7281-af73-402e-9ccf-7c2d6c9e762e}, !- Handle
@@ -5767,4 +5750,21 @@ OS:Rendering:Color,
   85,                                     !- Rendering Red Value
   107,                                    !- Rendering Green Value
   47;                                     !- Rendering Blue Value
+
+OS:Surface,
+  {bfd0cf06-a60e-425b-9dcd-e5a1eacbbee0}, !- Handle
+  Roof3549,                               !- Name
+  RoofCeiling,                            !- Surface Type
+  {aec2bcb2-25e5-4785-8ab8-67a97c587746}, !- Construction Name
+  {2199d41a-46e9-423a-bad3-bb4bf344a16f}, !- Space Name
+  Outdoors,                               !- Outside Boundary Condition
+  ,                                       !- Outside Boundary Condition Object
+  SunExposed,                             !- Sun Exposure
+  WindExposed,                            !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  -144.362335205078, -84.6252899169922, 28, !- X,Y,Z Vertex 1 {m}
+  -144.362335205078, -46.0463600158691, 28, !- X,Y,Z Vertex 2 {m}
+  -149.903747558594, -46.0463600158691, 28, !- X,Y,Z Vertex 3 {m}
+  -149.903747558594, -84.6252899169922, 28; !- X,Y,Z Vertex 4 {m}
 
