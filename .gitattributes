@@ -1,4 +1,2 @@
-results/*.eso filter=lfs diff=lfs merge=lfs -text
 *.eso filter=lfs diff=lfs merge=lfs -text
 *.out filter=lfs diff=lfs merge=lfs -text
-results/06.3-cosim-HPI/06.3-cosim-HPI_LW.out filter=lfs diff=lfs merge=lfs -text
