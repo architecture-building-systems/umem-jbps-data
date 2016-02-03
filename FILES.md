@@ -37,3 +37,20 @@ contains files necessary to run CitySim
 
 - 20150202_HPI_CalibrationStep.ipynb (FIXME:clayton-miller document this)
 - Extract heating and cooling demand from HPZ.ipynb (FIXME:clayton-miller document this)
+
+# models
+
+contains models and model fragments used in the workflows.
+
+- Energy+.idd (the IDD file to use for simulations with EnergyPlus)
+- Hoenggerberg.xml (the original CitySim model of the Hoenggerberg)
+  - produced by student (FIXME:daren-thomas: find out name)
+  - used in workflow 03-run-hoenggerberg.vt (FIXME:daren-thomas: workflow not running)
+  - has some geometric problems (fixed by workflow 05-fix-geometry.vt producing Hoenggerberg_cleaned.xml)
+- Hoenggerberg_cleaned.xml (fixed geometry issues with HPI building)
+  - produced by workflow 05-fix-geometry.vt
+  - basis for Hoenggerberg_HPI_vicinity.xml
+- Hoenggerberg_HPI_OpenStudio.idf (IDF of HPI building with fixed geometry)
+  - produced by collecting the resulting 04-extract-HPI.idf file from workflow 04-extract-HPI.vt
+  - manually opened in OpenStudio, automatic geometry fix by OpenStudio, save to Hoenggerberg_HPI_OpenStudio.idf
+  - used in workflow 05-fix-geometry.vt to produce 
