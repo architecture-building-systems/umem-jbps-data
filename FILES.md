@@ -53,4 +53,41 @@ contains models and model fragments used in the workflows.
 - Hoenggerberg_HPI_OpenStudio.idf (IDF of HPI building with fixed geometry)
   - produced by collecting the resulting 04-extract-HPI.idf file from workflow 04-extract-HPI.vt
   - manually opened in OpenStudio, automatic geometry fix by OpenStudio, save to Hoenggerberg_HPI_OpenStudio.idf
-  - used in workflow 05-fix-geometry.vt to produce 
+  - used in workflow 05-fix-geometry.vt to produce Hoenggerberg_cleaned.xml
+  - FIXME:daren-thomas: causality of workflows not clear here!!
+_ Hoenggerberg_HPI_OpenStudio.osm (used to create Hoenggerberg_HPI_OpenStudio.idf)
+- Hoenggerberg_HPI_vicinity.xml (CitySim model of HPI and surrounding buildings)
+  - derived from Hoenggerberg_cleaned.xml
+  - manually deleted all buildings not being considered
+- Hoenggerberg_HPI_vicinity_OpenStudio.osm (FIXME:daren-thomas: what was this used for?)
+- HPZ21_UMEM.idf (the original HPZ model as inherited from Christian Hersberger)
+  - not used as not trustworthy
+- template.idf (template of non-geometry IDF for co-simulation)
+  - to be merged with CitySimToEnergyPlus
+  - uses "SINGLE_ZONE" as zone name
+  - used in workflow 06-cosim-HPI.vt
+- template_HPI.idf (template of non-geometry IDF for energyplus-simulation)
+  - to be merged with CitySimToEnergyPlus
+  - uses zone name as defined in CitySim xml
+  - based on template.idf
+  - used in workflow 08-energyplus-HPI.vt
+- Variables_cosim.txt (list of energyplus output variables for co-simulation)
+  - to be used with VisTrails AddOutputVariableList
+  - used in workflow 06-cosim-HPI.vt
+- Variables_solo.txt (list of energyplus output variables for energyplus solo simulation)
+  - to be used with dpw module AddOutputVariableList
+  - used in workflow 08-energyplus-HPI.vt
+- internal-loads-01.idf (template of non-geometry IDF for co-simulation)
+  - based on template.idf
+  - includes electric equipment and lighting and people
+
+
+# pictures
+
+contains pictures and screenshots
+
+- 2016-01-05 16_28_38-Untitled - SketchUp Make.png (HPI building)
+- 2016-01-07 11_01_22-HPI - before radical simplification.png (closeup of HPI building)
+  - after passing through dpw module SimplifyCitySimGeometry 
+- HPI-before-simplification.png (HPI building in context)
+  - note how windows are not shown properly. they're there, but not visible!!
