@@ -154,11 +154,34 @@ contains the weatherfiles used for the simulations.
     - models/Hoenggerberg.xml
     - models/Hoenggerberg_HPI_OpenStudio.idf
   - output (models/Hoenggerberg_cleaned.xml)
-- 06.1-cosim-HPI.vt
-- 06.2-cosim-HPI.vt
-- 06.3-cosim-HPI.vt
-- 06.4-cosim-HPI.vt
-- 06-cosim-HPI.vt
-- 07-citysim-HPI.vt
-- 08-energyplus-HPI.vt
+- 06-cosim-HPI.vt (co-simulate HPI building with CitySim and EnergyPlus)
+  - simplification of CitySim geometry (merging of surfaces)
+  - simplification of EnergyPlus geometry (merging of surfaces)
+  - input
+    - models/Hoenggerberg_HPI_vicinity.xml
+    - models/template.idf
+    - weatherfiles/Zurich-Kloten_2013.cli
+    - models/Variables_cosim.txt
+  - output (results/06-cosim-HPI)
+- 07-citysim-HPI.vt (simulate CitySim vicinity of HPI)
+  - input
+    - models/Hoenggerberg_HPI_vicinity.xml
+    - weatherfiles/Zurich-Kloten_2013.cli
+  - output (results/07-citysim-HPI)
+- 08-energyplus-HPI.vt (run EnergyPlus for HPI building)
+  - no simplification of shading / geometry
+  - input
+    - models/Hoenggerberg_HPI_vicinity.xml
+    - models/template.idf
+    - weatherfiles/Zurich-Kloten_2013.epw
+    - models/Variables_solo.txt
+  - output (results/08-energyplus-HPI)
+- 09-cosim-HPI.vt (like 06-cosim-HPI.vt, but replaced models/template.idf with models/internal-loads-01.idf)
+  - no simplification of shading / geometry (FIXME:daren-thomas: check that this doesn't make a difference to the results of 06-cosim-HPI.vt)
+  - input
+    - models/Hoenggerberg_HPI_vicinity.xml
+    - models/internal-loads-01.idf
+    - weatherfiles/Zurich-Kloten_2013.cli
+    - models/Variables_cosim.txt
+
 - 09-cosim-HPI.vt
