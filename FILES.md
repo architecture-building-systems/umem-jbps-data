@@ -84,10 +84,41 @@ _ Hoenggerberg_HPI_OpenStudio.osm (used to create Hoenggerberg_HPI_OpenStudio.id
 
 # pictures
 
-contains pictures and screenshots
+contains pictures and screenshots. We should collect more pictures and screenshots as we will need those for publications / conferences etc.
 
 - 2016-01-05 16_28_38-Untitled - SketchUp Make.png (HPI building)
 - 2016-01-07 11_01_22-HPI - before radical simplification.png (closeup of HPI building)
   - after passing through dpw module SimplifyCitySimGeometry 
 - HPI-before-simplification.png (HPI building in context)
   - note how windows are not shown properly. they're there, but not visible!!
+
+# raw-data
+
+contains raw data used for the DAYFILTER process to create the measured data sets.
+
+FIXME:clayton-miller: describe the files in this folder
+FIXME:clayton-miller: move screenshots / images to the `pictures` folder
+
+# results
+
+contains a folder for each workflow that produces results. The results are
+those collected by the dpw SaveCoSimResults, SaveCitySimResults and
+SaveEnergyPlusResults modules. Each folder is named after the workflow that produced it. 
+
+- 04-extract-HPI
+- 06-cosim-HPI
+- 07-citysim-HPI
+- 08-energyplus-HPI
+- 09-cosim-HPI
+
+# weatherfiles
+
+contains the weatherfiles used for the simulations.
+
+- Zurich-Kloten_2013.cli (CitySim weather file, extracted from Zurich-Kloten_2013.epw)
+- Zurich-Kloten_2013.epw (EnergyPlus weather file)
+- Zurich-Kloten_2013_SW.out (short wave radiation file automatically produced by CitySim)
+
+# workflows
+
+
