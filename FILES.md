@@ -54,7 +54,6 @@ contains models and model fragments used in the workflows.
   - produced by collecting the resulting 04-extract-HPI.idf file from workflow 04-extract-HPI.vt
   - manually opened in OpenStudio, automatic geometry fix by OpenStudio, save to Hoenggerberg_HPI_OpenStudio.idf
   - used in workflow 05-fix-geometry.vt to produce Hoenggerberg_cleaned.xml
-  - FIXME:daren-thomas: causality of workflows not clear here!!
 _ Hoenggerberg_HPI_OpenStudio.osm (used to create Hoenggerberg_HPI_OpenStudio.idf)
 - Hoenggerberg_HPI_vicinity.xml (CitySim model of HPI and surrounding buildings)
   - derived from Hoenggerberg_cleaned.xml
@@ -121,4 +120,45 @@ contains the weatherfiles used for the simulations.
 
 # workflows
 
-
+- 01-run-hpz.vt (run legacy HPZ model from Christian Hersberger)
+  - obsolete / non-functional
+  - input
+    - models/HPZ21_UMEM.idf
+    - weatherfiles/Zurich-Kloten_2013.epw
+  - output (results/01-run-hpz)
+- 02-bim-energyplus.vt (run EnergyPlus on a Revit BIM model - DPV-style)
+  - obsolete / non-functional
+  - input
+    - Revit BIM model (from application)
+    - weatherfiles/Zurich-Kloten_2013.epw
+  - output (results/02-bim-energyplus)
+- 03-run-hoenggerberg.vt (run original Hoenggerberg model with CitySim)
+  - obsolete / non-functional
+  - could be quickly fixed to run by using dpw RelativePath
+  - input
+    - Hoenggerberg.xml (could be moved to Hoenggerberg_cleaned.xml)
+    - Zurich-Kloten_2013.cli
+  - output (results/03-run-hoenggerberg)
+- 04-extract-HPI.vt (run the HPI building with EnergyPlus)
+  - obsolete / non-functional
+  - input
+    - models/Hoenggerberg.xml (yes, the original Hoenggerberg model)
+    - models/template.idf
+    - weatherfiles/Zurich-Kloten_2013.epw
+  - output (results/04-extract-HPI)
+- 05-fix-geometry.vt (updates HPI geometry with OpenStudio fixes to produce models/Hoengerberg_cleaned.xml)
+  - Hoenggerberg_HPI_OpenStudio.idf created manually, see models/Hoenggerberg_HPI_OpenStudio.idf description above
+  - dwp module MapEnergyPlusGeometryToCitySim matches floors, walls, roofs and
+    shading surfaces in IDF with CitySim model based on naming convention of dpw module CitySimToEnergyPlus
+  - input
+    - models/Hoenggerberg.xml
+    - models/Hoenggerberg_HPI_OpenStudio.idf
+  - output (models/Hoenggerberg_cleaned.xml)
+- 06.1-cosim-HPI.vt
+- 06.2-cosim-HPI.vt
+- 06.3-cosim-HPI.vt
+- 06.4-cosim-HPI.vt
+- 06-cosim-HPI.vt
+- 07-citysim-HPI.vt
+- 08-energyplus-HPI.vt
+- 09-cosim-HPI.vt
