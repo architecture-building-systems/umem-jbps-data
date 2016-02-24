@@ -79,6 +79,9 @@ _ `Hoenggerberg_HPI_OpenStudio.osm` (used to create `Hoenggerberg_HPI_OpenStudio
 - `internal-loads-01.idf` (template of non-geometry IDF for co-simulation)
   - based on `template.idf`
   - includes electric equipment and lighting and people
+- `internal-loads-02.idf` (template of non-geometry IDF for co-simulation)
+  - based on `internal-loads-01.idf`
+  - electric equipment and lighting * 5
 
 
 # pictures
@@ -184,3 +187,6 @@ contains the weatherfiles used for the simulations.
     - `weatherfiles/Zurich-Kloten_2013.cli`
     - `models/Variables_cosim.txt`
   - output (09-cosim-HPI)
+- `10-cosim-HPI.vt` (like `09-cosim-HPI.vt`, but uses `models/internal-loads-02.idf` instead
+  - input see 09-cosim-HPI
+  - output (10-cosim-HPI)

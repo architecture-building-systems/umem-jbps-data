@@ -3,3 +3,5 @@ ipy-notebooks/.ipynb_checkpoints
 .ropeproject/*
 weatherfiles/Zurich-Kloten_2013_SW.out
 debugging/*
+citysim/CitySim.exe
+results/*
