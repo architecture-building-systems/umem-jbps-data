@@ -1,0 +1,108 @@
+OutputControl:Table:Style,
+  All;                                    !- Column Separator
+
+ZoneHVAC:IdealLoadsAirSystem,
+  Zone11466ZoneHVAC:IdealLoadsAirSystem,  !- Name
+  ,                                       !- Availability Schedule Name
+  Zone11466_Supply_Inlet,                 !- Zone Supply Air Node Name
+  ,                                       !- Zone Exhaust Air Node Name
+  50,                                     !- Maximum Heating Supply Air Temperature {C}
+  13,                                     !- Minimum Cooling Supply Air Temperature {C}
+  0.008,                                  !- Maximum Heating Supply Air Humidity Ratio {kgWater/kgDryAir}
+  0.009,                                  !- Minimum Cooling Supply Air Humidity Ratio {kgWater/kgDryAir}
+  NoLimit,                                !- Heating Limit
+  ,                                       !- Maximum Heating Air Flow Rate {m3/s}
+  ,                                       !- Maximum Sensible Heating Capacity {W}
+  NoLimit,                                !- Cooling Limit
+  ,                                       !- Maximum Cooling Air Flow Rate {m3/s}
+  ,                                       !- Maximum Total Cooling Capacity {W}
+  ,                                       !- Heating Availability Schedule Name
+  ,                                       !- Cooling Availability Schedule Name
+  None,                                   !- Dehumidification Control Type
+  .7,                                     !- Cooling Sensible Heat Ratio {dimensionless}
+  None,                                   !- Humidification Control Type
+  Zone11466_DesignSpecification_OutdoorAir, !- Design Specification Outdoor Air Object Name
+  ,                                       !- Outdoor Air Inlet Node Name
+  None,                                   !- Demand Controlled Ventilation Type
+  NoEconomizer,                           !- Outdoor Air Economizer Type
+  Sensible,                               !- Heat Recovery Type
+  0.2,                                    !- Sensible Heat Recovery Effectiveness {dimensionless}
+  0.65;                                   !- Latent Heat Recovery Effectiveness {dimensionless}
+
+Output:VariableDictionary,
+  regular;                                !- Key Field
+
+SurfaceConvectionAlgorithm:Outside,
+  DOE-2;                                  !- Algorithm
+
+Output:Diagnostics,
+  DisplayAdvancedReportVariables;         !- Key 1
+
+Output:Diagnostics,
+  DisplayExtraWarnings;                   !- Key 1
+
+SurfaceConvectionAlgorithm:Inside,
+  TARP;                                   !- Algorithm
+
+ZoneHVAC:EquipmentConnections,
+  Zone11466,                              !- Zone Name
+  Zone11466_Equipment,                    !- Zone Conditioning Equipment List Name
+  Zone11466_Supply_Inlet,                 !- Zone Air Inlet Node or NodeList Name
+  ,                                       !- Zone Air Exhaust Node or NodeList Name
+  Zone11466_Zone_Air_Node,                !- Zone Air Node Name
+  Zone11466_Return_Outlet;                !- Zone Return Air Node Name
+
+DesignSpecification:OutdoorAir,
+  Zone11466_DesignSpecification_OutdoorAir, !- Name
+  AirChanges/Hour,                        !- Outdoor Air Method
+  ,                                       !- Outdoor Air Flow per Person {m3/s-person}
+  ,                                       !- Outdoor Air Flow per Zone Floor Area {m3/s-m2}
+  ,                                       !- Outdoor Air Flow per Zone {m3/s}
+  0.7,                                    !- Outdoor Air Flow Air Changes per Hour {1/hr}
+  VentilationSchedule;                    !- Outdoor Air Flow Rate Fraction Schedule Name
+
+ZoneHVAC:EquipmentList,
+  Zone11466_Equipment,                    !- Name
+  ZoneHVAC:IdealLoadsAirSystem,           !- Zone Equipment Object Type 1
+  Zone11466ZoneHVAC:IdealLoadsAirSystem,  !- Zone Equipment Name 1
+  1,                                      !- Zone Equipment Cooling Sequence 1
+  1;                                      !- Zone Equipment Heating or No-Load Sequence 1
+
+Output:Table:SummaryReports,
+  AllSummary;                             !- Report Name 1
+
+ZoneControl:Thermostat,
+  Zone11466_Thermostat,                   !- Name
+  Zone11466,                              !- Zone or ZoneList Name
+  HVACTemplate_Always_4,                  !- Control Type Schedule Name
+  ThermostatSetpoint:DualSetpoint,        !- Control Object Type 1
+  Thermostat_Zone11466_Dual_SP_Control;   !- Control Name 1
+
+ZoneVentilation:DesignFlowRate,
+  Zone11466_VentilationSystem,            !- Name
+  Zone11466,                              !- Zone or ZoneList Name
+  VentilationSchedule,                    !- Schedule Name
+  AirChanges/Hour,                        !- Design Flow Rate Calculation Method
+  ,                                       !- Design Flow Rate {m3/s}
+  ,                                       !- Flow Rate per Zone Floor Area {m3/s-m2}
+  ,                                       !- Flow Rate per Person {m3/s-person}
+  0.7,                                    !- Air Changes per Hour {1/hr}
+  Natural,                                !- Ventilation Type
+  0.0,                                    !- Fan Pressure Rise {Pa}
+  1.0,                                    !- Fan Total Efficiency
+  1.0,                                    !- Constant Term Coefficient
+  0.0,                                    !- Temperature Term Coefficient
+  0.0,                                    !- Velocity Term Coefficient
+  0.0,                                    !- Velocity Squared Term Coefficient
+  20.0,                                   !- Minimum Indoor Temperature {C}
+  ,                                       !- Minimum Indoor Temperature Schedule Name
+  100.0,                                  !- Maximum Indoor Temperature {C}
+  ,                                       !- Maximum Indoor Temperature Schedule Name
+  1.0,                                    !- Delta Temperature {deltaC}
+  ,                                       !- Delta Temperature Schedule Name
+  -10.0,                                  !- Minimum Outdoor Temperature {C}
+  ,                                       !- Minimum Outdoor Temperature Schedule Name
+  26.0,                                   !- Maximum Outdoor Temperature {C}
+  ,                                       !- Maximum Outdoor Temperature Schedule Name
+  40.0;                                   !- Maximum Wind Speed {m/s}
+
