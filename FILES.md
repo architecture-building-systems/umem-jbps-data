@@ -190,3 +190,23 @@ contains the weatherfiles used for the simulations.
 - `10-cosim-HPI.vt` (like `09-cosim-HPI.vt`, but uses `models/internal-loads-02.idf` instead
   - input see 09-cosim-HPI
   - output (10-cosim-HPI)
+- `12-energyplus-HPI.vt` (like `10-cosim-HPI.vt`, but just EnergyPlus, writes out `models/12-HPI.idf`)
+- `13-energyplus-HPI.vt` (simple EnergyPlus run with a modified version of `models/12-HPI.idf`)
+  - input
+    - `models/13-HPI.idf` - removed all shading from `models/12-HPI.idf`
+- `14-energyplus-HPI.vt` (simple EnergyPlus run with a modified version of `models/13-HPI.idf`)
+  - input
+    - `models/14-HPI.idf` - messing with constructions based on `models/13-HPI.idf`
+- `15-energyplus-HPI.vt` - messing with setpoints...
+- `16-energyplus-HPI.vt` - more messing with setpoints...
+- `17-energyplus-HPI.vt` - constructions as in 13, everything else like 16...
+- `18-energyplus-HPI.vt` - more messing with setpoints (based on 16)...
+- `19-cosim-HPI.vt` - based on 11-cosim-HPI.vt, with constructions from 18 and setpoints from 18
+- 20-cosim-HPI.vt - based on 19, but with new schedules (SCHEDULE:FILE)
+  - input: internal-loads-03.idf
+  - input: schedules-01.idf and HPI_Schedules.csv
+  - output: cooling is calibrated! now to calibrate heating!
+- 21-cosim-HPI.vt - based on 20, but with new schedules
+  - input: schedules-21.idf
+  - input: HPI_Schedules-21.idf
+- 22-cosim-HPI.vt - based on 21, but use HPI_Schedules for occupancy and internal loads
