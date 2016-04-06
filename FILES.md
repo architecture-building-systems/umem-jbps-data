@@ -210,3 +210,6 @@ contains the weatherfiles used for the simulations.
   - input: schedules-21.idf
   - input: HPI_Schedules-21.idf
 - 22-cosim-HPI.vt - based on 21, but use HPI_Schedules for occupancy and internal loads
+  - input: schedules-22.idf
+  - input: HPI_Schedules-21.idf
+  - input: internal-loads-04.idf
