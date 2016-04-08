@@ -208,17 +208,27 @@ contains the weatherfiles used for the simulations.
   - output: cooling is calibrated! now to calibrate heating!
 - 21-cosim-HPI.vt - based on 20, but with new schedules
   - input: schedules-21.idf
-  - input: HPI_Schedules-21.idf
+  - input: HPI_Schedules-21.csv
 - 22-cosim-HPI.vt - based on 21, but use HPI_Schedules for internal loads
   - input: schedules-22.idf
-  - input: HPI_Schedules-21.idf
+  - input: HPI_Schedules-21.csv
   - input: internal-loads-04.idf
 - 23-cosim-HPI.vt - based on 22, added occupancy based on HPI_Schedules
   - input: schedules-23.idf
-  - input: HPI_Schedules-21.idf
+  - input: HPI_Schedules-21.csv
   - input: internal-loads-05.idf
   - input: remove.idf (remove shading objects)
 - 24 - based on 23, but without removing shading objects (for comparison)
 - 25-extract-HPI-for-screenshot.vt: create clean IDF of HPI with Hoenggerberg shading for screenshot of model
   - input: ../models/Hoenggerberg.xml
-- 23-cosim-HPI.vt - based on 23, new schedules...
+- 26-energyplus-HPI.vt - based on 23, new schedules... and only energyplus simulation
+  - input ../models/HPI_Schedules-26.csv
+  - input ../models/schedules-26.idf
+- 27-cosim-HPI.vt - based on 26, new schedules...
+  - input ../models/HPI_Schedules-27.csv
+  - input ../models/schedules-27.idf
+- 28-cosim-HPI.vt - based on 27, new schedules...
+  - input ../models/HPI_Schedules-28.csv (changing setpoints)
+  - input ../models/schedules-28.idf
+  - input ../models/internal-loads-28.idf (double internal loads for electric and light, zone area per person=10)
+

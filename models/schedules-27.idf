@@ -1,0 +1,46 @@
+SCHEDULE:File,         
+    HVACTemplate_Always_26,   !- Name
+    HVACTemplate_Any_Number,  !- Schedule Type Limits Name
+    C:\projects\UMEM-JBPS-Paper\models\HPI_Schedules-27.csv,        !- Name of File
+    3,                        !- Column Number
+    1,                        !- Rows to Skip at Top
+    8760,                     !- Number of Hours of Data
+    Comma;                    !- Column Separator
+
+SCHEDULE:File,         
+    HVACTemplate_Always_20,   !- Name
+    HVACTemplate_Any_Number,  !- Schedule Type Limits Name
+    C:\projects\UMEM-JBPS-Paper\models\HPI_Schedules-27.csv,        !- Name of File
+    4,                        !- Column Number
+    1,                        !- Rows to Skip at Top
+    8760,                     !- Number of Hours of Data
+    Comma;                    !- Column Separator
+    
+
+SCHEDULE:File,         
+    EquipSchedule,   !- Name
+    Fraction,  !- Schedule Type Limits Name
+    C:\projects\UMEM-JBPS-Paper\models\HPI_Schedules-27.csv,        !- Name of File
+    2,                        !- Column Number
+    1,                        !- Rows to Skip at Top
+    8760,                     !- Number of Hours of Data
+    Comma;                    !- Column Separator
+
+
+SCHEDULE:File,         
+    LightSchedule,   !- Name
+    Fraction,  !- Schedule Type Limits Name
+    C:\projects\UMEM-JBPS-Paper\models\HPI_Schedules-27.csv,        !- Name of File
+    2,                        !- Column Number
+    1,                        !- Rows to Skip at Top
+    8760,                     !- Number of Hours of Data
+    Comma;                    !- Column Separator
+
+SCHEDULE:File,         
+    OccupationSchedule,   !- Name
+    Fraction,  !- Schedule Type Limits Name
+    C:\projects\UMEM-JBPS-Paper\models\HPI_Schedules-27.csv,        !- Name of File
+    2,                        !- Column Number
+    1,                        !- Rows to Skip at Top
+    8760,                     !- Number of Hours of Data
+    Comma;                    !- Column Separator
