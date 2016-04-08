@@ -209,7 +209,15 @@ contains the weatherfiles used for the simulations.
 - 21-cosim-HPI.vt - based on 20, but with new schedules
   - input: schedules-21.idf
   - input: HPI_Schedules-21.idf
-- 22-cosim-HPI.vt - based on 21, but use HPI_Schedules for occupancy and internal loads
+- 22-cosim-HPI.vt - based on 21, but use HPI_Schedules for internal loads
   - input: schedules-22.idf
   - input: HPI_Schedules-21.idf
   - input: internal-loads-04.idf
+- 23-cosim-HPI.vt - based on 22, added occupancy based on HPI_Schedules
+  - input: schedules-23.idf
+  - input: HPI_Schedules-21.idf
+  - input: internal-loads-05.idf
+  - input: remove.idf (remove shading objects)
+- 24 - based on 23, but without removing shading objects (for comparison)
+- 25-extract-HPI-for-screenshot.vt: create clean IDF of HPI with Hoenggerberg shading for screenshot of model
+  - input: ../models/Hoenggerberg_cleaned.xml
