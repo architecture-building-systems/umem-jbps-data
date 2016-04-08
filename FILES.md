@@ -249,3 +249,6 @@ contains the weatherfiles used for the simulations.
 - 34-cosim-HPI.vt - based on 31, changing schedules/setpoints
   - input ../models/internal-loads-31.idf
   - input ../models/schedules-34.idf (and HPI_Schedules-34.csv)
+- 35-cosim-HPI.vt - based on 31, changing schedules/setpoints
+  - input ../models/internal-loads-31.idf
+  - input ../models/schedules-35.idf (and HPI_Schedules-34.csv)
