@@ -220,4 +220,5 @@ contains the weatherfiles used for the simulations.
   - input: remove.idf (remove shading objects)
 - 24 - based on 23, but without removing shading objects (for comparison)
 - 25-extract-HPI-for-screenshot.vt: create clean IDF of HPI with Hoenggerberg shading for screenshot of model
-  - input: ../models/Hoenggerberg_cleaned.xml
+  - input: ../models/Hoenggerberg.xml
+- 23-cosim-HPI.vt - based on 23, new schedules...
