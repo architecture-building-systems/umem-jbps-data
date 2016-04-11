@@ -224,31 +224,34 @@ contains the weatherfiles used for the simulations.
 - 26-energyplus-HPI.vt - based on 23, new schedules... and only energyplus simulation
   - input ../models/HPI_Schedules-26.csv
   - input ../models/schedules-26.idf
-- 27-cosim-HPI.vt - based on 26, new schedules...
+- 27-energyplus-HPI.vt - based on 26, new schedules...
   - input ../models/HPI_Schedules-27.csv
   - input ../models/schedules-27.idf
-- 28-cosim-HPI.vt - based on 27, new schedules...
+- 28-energyplus-HPI.vt - based on 27, new schedules...
   - input ../models/HPI_Schedules-28.csv (changing setpoints)
   - input ../models/schedules-28.idf
   - input ../models/internal-loads-28.idf (double internal loads for electric and light, zone area per person=10)
-- 29-cosim-HPI.vt - based on 28, new setpoints...
+- 29-energyplus-HPI.vt - based on 28, new setpoints...
   - input ../models/HPI_Schedules-29.csv (changing setpoints)
   - input ../models/schedules-29.idf
-- 30-cosim-HPI.vt - based on 29, new setpoints...
+- 30-energyplus-HPI.vt - based on 29, new setpoints...
   - input ../models/HPI_Schedules-30.csv (changing setpoints)
   - input ../models/schedules-30.idf
-- 31-cosim-HPI.vt - based on 30, changing internal loads
+- 31-energyplus-HPI.vt - based on 30, changing internal loads
   - input ../models/internal-loads-30.idf
   - input ../models/schedules-31.idf (and HPI_Schedules-31.csv)
-- 32-cosim-HPI.vt - based on 31, changing setpoints
+- 32-energyplus-HPI.vt - based on 31, changing setpoints
   - input ../models/internal-loads-30.idf
   - input ../models/schedules-32.idf (and HPI_Schedules-32.csv)
-- 33-cosim-HPI.vt - based on 31, changing setpoints
+- 33-energyplus-HPI.vt - based on 31, changing setpoints
   - input ../models/internal-loads-31.idf
   - input ../models/schedules-33.idf (and HPI_Schedules-33.csv)
-- 34-cosim-HPI.vt - based on 31, changing schedules/setpoints
+- 34-energyplus-HPI.vt - based on 31, changing schedules/setpoints
   - input ../models/internal-loads-31.idf
   - input ../models/schedules-34.idf (and HPI_Schedules-34.csv)
-- 35-cosim-HPI.vt - based on 31, changing schedules/setpoints
+- 35-energyplus-HPI.vt - based on 31, changing schedules/setpoints
   - input ../models/internal-loads-31.idf
   - input ../models/schedules-35.idf (and HPI_Schedules-34.csv)
+- 36-cosim-HPI.vt - based on 24, but using schedules, internal-loads and setpoints from 35
+  - input ../models/internal-loads-31.idf
+  - input ../models/schedules-36.idf (and HPI_Schedules-35.csv)
